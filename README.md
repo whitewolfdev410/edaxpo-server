@@ -15,3 +15,8 @@ install php and start
 ```
 php artisan serve
 ```
+
+## install dependencies
+```
+composer install
+```
