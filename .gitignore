@@ -19,3 +19,4 @@ yarn-error.log
 /.vscode
 /scripts
 /.env.local
+docker-compose.override.yml
