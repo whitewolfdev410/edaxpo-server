@@ -9,7 +9,7 @@ import {antdTheme} from "@/antd";
 import { StyleProvider } from '@ant-design/cssinjs';
 import {ConfigContextProvider, ModalsContextProvider, ModalsRender, withModalForm} from "@logicpanel/admin-ui";
 import React from "react";
-import adminUi from "@/config/admin-ui";
+import adminUi from "../backoffice/config/admin-ui";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 

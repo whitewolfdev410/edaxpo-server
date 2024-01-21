@@ -7,7 +7,7 @@ interface HorizontalLayoutPageProps {
 }
 
 const HorizontalLayoutPage: React.FC<HorizontalLayoutPageProps> = ({ content, sidebar, title }) => {
-  const [opened, setOpened] = useState(false)
+  const [opened, setOpened] = useState(true)
 
   const toggle = () => {
     setOpened(!opened)

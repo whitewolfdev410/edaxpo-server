@@ -1,8 +1,8 @@
 import type { ConfigContextType } from '@logicpanel/admin-ui'
 import { MoreOutlined } from "@ant-design/icons";
-import HorizontalLayoutPage from "@/Components/HorizontalLayoutPage";
-import Dialog from "@/Components/Dialog";
-import {apiClient} from "@/services/http/client";
+import HorizontalLayoutPage from "../components/layout/HorizontalLayoutPage";
+import Dialog from "../components/Dialog";
+import {apiClient} from "../services/http/client";
 
 const showResponseMessage = (data: {
   error: boolean

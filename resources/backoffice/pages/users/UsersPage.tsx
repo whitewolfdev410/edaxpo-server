@@ -1,16 +1,19 @@
 import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
-import {Avatar, Tag} from "antd";
+import {Avatar, Button} from "antd";
 
 const SearchComponent = (props: any) => {
   return (
-    <div>asdad</div>
+    <div className="py-4 text-right">
+        <Button type="primary" onClick={() => props.onNewClick(0)}>Nuovo</Button>
+    </div>
   )
 }
 
 export default function UsersPage() {
   return (
       <Crud
+          debug
           apiResource={'/api/users'}
           tableApiResource={'/api/users/instructors'}
           modalKey={'user'}
@@ -28,7 +31,7 @@ export default function UsersPage() {
                                   <Avatar size={50} shape="square" src={row.imageUrl}/>
                               </div>
                               <div>
-                                  <div>{row.firstName} {row.lastName}</div>
+                                  <div>{row.first_name} {row.last_name}</div>
                                   <div>{row.email}</div>
                               </div>
                           </div>
@@ -36,15 +39,14 @@ export default function UsersPage() {
                   },
               },
               {
-                  title: 'Sede',
-                  dataIndex: 'school',
-                  render: (school: any) => <Tag color={school?.coloreDitta}>{school?.codiceDitta}</Tag>,
+                  title: 'Created At',
+                  dataIndex: 'created_at',
                   width: 150,
                   className: 'text-center',
               },
               {
-                  title: 'Username',
-                  dataIndex: 'username',
+                  title: 'Created At',
+                  dataIndex: 'updated_at',
                   width: 150,
                   className: 'text-center',
               },

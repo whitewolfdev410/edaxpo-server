@@ -1,8 +1,7 @@
-import { Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
-import UsersPage from "@/Components/UsersPage";
-import BackofficeLayout from "@/Layouts/BackofficeLayout";
 import React from "react";
+import UsersPage from "../../backoffice/pages/users/UsersPage";
+import BackofficeLayout from "@/Layouts/BackofficeLayout";
 
 export default function Backoffice({ auth }: PageProps) {
     return (
