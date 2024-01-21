@@ -84,11 +84,13 @@ export default class Dialog extends React.Component<any,any> {
     return (
       <>
         {ReactDOM.createPortal(
-          <>
-            {this.props.children}
-            {this.props.footer && <div className={'dialog-footer'}>{this.props.footer}</div>}
-          </>,
-          this.div
+            <div className='px-3 pt-3 bg-white rounded-xl'>
+                {this.props.title && <div className={'font-bold text-2xl mb-2'}>{this.props.title}</div>}
+                {this.props.children}
+                {this.props.footer &&
+                    <div className={'py-3 mt-2 flex flex-col gap-3 justify-end'}>{this.props.footer}</div>}
+            </div>,
+            this.div
         )}
       </>
     )
