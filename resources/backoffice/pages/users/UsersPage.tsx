@@ -1,6 +1,7 @@
 import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
 import {Avatar, Button} from "antd";
+import {renderDate} from "@b/components/table/renders";
 
 const SearchComponent = (props: any) => {
   return (
@@ -43,12 +44,14 @@ export default function UsersPage() {
                   dataIndex: 'created_at',
                   width: 150,
                   className: 'text-center',
+                  render: renderDate
               },
               {
                   title: 'Created At',
                   dataIndex: 'updated_at',
                   width: 150,
                   className: 'text-center',
+                  render: renderDate
               },
           ]}
       />
