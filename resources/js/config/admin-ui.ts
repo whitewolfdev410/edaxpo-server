@@ -25,7 +25,7 @@ const adminUiConfig = (navigate: any): ConfigContextType => ({
   getPageFromUrl(): number | string {
     return 1
   },
-  handleDelete(props): Promise<any> {
+  handleDelete(props: any): Promise<any> {
     return apiClient.delete(`${props.apiResource}/${props.id}`)
   },
   navigate: {

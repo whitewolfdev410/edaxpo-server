@@ -1,7 +1,7 @@
 import React, {FC, ReactNode} from 'react'
 import Crud from './index'
 import { CrudTable } from './crud-table'
-import {ModalProps, RenderSearchProps} from "@/components/crud/crud-props";
+import {ModalProps, RenderSearchProps} from "./crud-props";
 
 type pageLayout =  'inline' | 'card' | 'vertical'
 type actionButtonType = boolean | 'edit' | 'context-menu'

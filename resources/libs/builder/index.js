@@ -90,7 +90,7 @@ if (useTs) {
 
 const inputOptions = {
   input: inputPath,
-  external: ['react', 'react-dom', 'formik', 'antd' , 'react-router-dom', 'qs', 'react-helmet'],
+  external: ['react', 'react-dom', 'formik', 'antd' ,'date-fns', 'react-router-dom', 'qs', 'react-helmet'],
   plugins,
 }
 

@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import Crud from '@/components/crud'
 import {useConfig} from "@/contexts";
-import {CrudProps} from "@/components/crud/crud-props";
+import {CrudProps} from "./crud-props";
 
 type StackCrudProps = CrudProps & {
     detailPageComponent: any

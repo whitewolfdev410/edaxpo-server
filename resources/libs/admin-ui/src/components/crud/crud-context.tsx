@@ -1,5 +1,5 @@
 import React from "react";
-import {ModalProps} from "@/components/crud/crud-props";
+import {ModalProps} from "./crud-props";
 
 type CrudContextType = {
   searchDefinitions: any[]

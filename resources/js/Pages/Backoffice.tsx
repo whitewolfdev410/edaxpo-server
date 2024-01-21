@@ -1,9 +1,8 @@
 import { Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
-import {Button, Steps} from "antd";
 import UsersPage from "@/Components/UsersPage";
 
-export default function Dashboard({ auth }: PageProps) {
+export default function Backoffice({ auth }: PageProps) {
     const description = 'This is a description.';
 
     return (
