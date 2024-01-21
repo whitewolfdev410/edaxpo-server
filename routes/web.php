@@ -37,7 +37,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/admin/{page}', function($page){
     Inertia::setRootView("backoffice-app");
-    return Inertia::render('Dashboard', [
+    return Inertia::render('Backoffice', [
         'pageName' => $page
     ])->withViewData(['pageName' => $page]);
 })->middleware(['auth', 'verified'])->name('backoffice');

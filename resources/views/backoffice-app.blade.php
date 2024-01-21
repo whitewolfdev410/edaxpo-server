@@ -15,6 +15,9 @@
         @viteReactRefresh
         @vite(['resources/js/app.tsx', "resources/js/Pages/{$page['component']}.tsx"])
         @inertiaHead
+
+        <script src="/assets/js/jquery-3.7.1.min.js"></script>
+        <script src="/assets/js/jquery-ui.min.js"></script>
     </head>
     <body class="font-sans antialiased">
         @inertia('backoffice-app')
