@@ -42,6 +42,7 @@ class AdminUserController extends Controller
     {
         $data = $request->all();
         $user = new User();
+        $data['password'] = !empty($data['password']) ? bcrypt($data['password']) : "";
         $user->fill($data);
         $user->save();
         return new JsonResponse($user);

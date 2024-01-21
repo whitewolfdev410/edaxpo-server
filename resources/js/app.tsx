@@ -10,13 +10,10 @@ import { StyleProvider } from '@ant-design/cssinjs';
 import {ConfigContextProvider, ModalsContextProvider, ModalsRender, withModalForm} from "@logicpanel/admin-ui";
 import React from "react";
 import adminUi from "../backoffice/config/admin-ui";
+import {modalsRegistry} from "../backoffice/config/modals";
+import {IntlProvider} from "react-intl";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
-
-const UserFormFake = withModalForm({
-    apiResource: "/api/users",
-    title: "Utente",
-})((props: any) => <div><pre>{JSON.stringify(props,null,2)}</pre></div>)
 
 // check if exists backoffice-app element
 const element = document.getElementById('backoffice-app');
@@ -50,18 +47,16 @@ if (!element) {
             root.render(
                 <ConfigProvider theme={antdTheme}>
                     <StyleProvider hashPriority="high">
-                        <ConfigContextProvider config={adminUi(null)}>
-                            <ModalsContextProvider>
-                                <App {...props} />
-                                <ModalsRender
-                                    modalsRegistry={{
-                                        user: {
-                                            Component: UserFormFake
-                                        }
-                                    }}
-                                />
-                            </ModalsContextProvider>
-                        </ConfigContextProvider>
+                        <IntlProvider locale={""} messages={{}}>
+                            <ConfigContextProvider config={adminUi(null)}>
+                                <ModalsContextProvider>
+                                    <App {...props} />
+                                    <ModalsRender
+                                        modalsRegistry={modalsRegistry}
+                                    />
+                                </ModalsContextProvider>
+                            </ConfigContextProvider>
+                        </IntlProvider>
                     </StyleProvider>
                 </ConfigProvider>
             );

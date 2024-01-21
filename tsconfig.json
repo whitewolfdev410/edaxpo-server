@@ -11,10 +11,18 @@
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "paths": {
+            "@b/*": ["./resources/backoffice/*"],
             "@/*": ["./resources/js/*"],
             "ziggy-js": ["./vendor/tightenco/ziggy"]
         }
     },
-    "include": ["resources/js/**/*.ts", "resources/js/**/*.tsx", "resources/js/**/*.d.ts"],
+    "include": [
+        "resources/js/**/*.ts",
+        "resources/js/**/*.tsx",
+        "resources/js/**/*.d.ts",
+        "resources/backoffice/**/*.ts",
+        "resources/backoffice/**/*.tsx",
+        "resources/backoffice/**/*.d.ts"
+    ],
     "exclude": ["resources/libs/**/*.ts", "resources/libs/**/*.tsx", "resources/libs/**/*.d.ts"]
 }

@@ -1,8 +1,8 @@
 import type { ConfigContextType } from '@logicpanel/admin-ui'
 import { MoreOutlined } from "@ant-design/icons";
 import HorizontalLayoutPage from "../components/layout/HorizontalLayoutPage";
-import Dialog from "../components/Dialog";
 import {apiClient} from "../services/http/client";
+import CrudDialog from "@b/components/dialog/CrudDialog";
 
 const showResponseMessage = (data: {
   error: boolean
@@ -19,7 +19,7 @@ const adminUiConfig = (navigate: any): ConfigContextType => ({
   TableActionButtons: () => null,
   // ConfirmDeleteMessage: "global.confirm_delete",
   TableContextMenuIcon: MoreOutlined,
-  ModalComponent: Dialog,
+  ModalComponent: CrudDialog,
   DefaultResponseMessage: showResponseMessage,
   apiClient,
   getPageFromUrl(): number | string {
