@@ -1,0 +1,44 @@
+{
+  "name": "@logicpanel/admin-ui",
+  "version": "0.0.1",
+  "description": "Commons react libs for Admin panel",
+  "author": "william <william.peralta18@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/admin-ui.cjs.js",
+  "module": "dist/admin-ui.esm.js",
+  "src": "src/index.ts",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ./builder.js",
+    "start": "npx dotenv-cli -v NODE_ENV=development -- node ./builder.js --watch",
+    "eslint": "eslint src",
+    "versions": "tsc --version"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1 || ^18.1.0",
+    "react-helmet": "^6.0.0",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "@wperalta/builder": "workspace:^0.1.1",
+    "react": "^18.1.0",
+    "react-helmet": "^6.0.0"
+  },
+  "typings": "./dist/index.d.ts",
+  "builder": {
+    "typescript": true
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

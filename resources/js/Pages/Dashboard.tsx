@@ -5,6 +5,7 @@ import {Button, Steps} from "antd";
 
 export default function Dashboard({ auth }: PageProps) {
     const description = 'This is a description.';
+
     return (
         <AuthenticatedLayout
             user={auth.user}
