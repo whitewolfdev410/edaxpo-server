@@ -17,7 +17,6 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
-       {{$pageName}}
-        @inertia
+        @inertia('backoffice-app')
     </body>
 </html>
