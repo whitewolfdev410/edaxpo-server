@@ -35,4 +35,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/admin/{page}', function($page){
+    Inertia::setRootView("backoffice-app");
+    return Inertia::render('Dashboard', [
+        'pageName' => $page
+    ])->withViewData(['pageName' => $page]);
+})->middleware(['auth', 'verified'])->name('backoffice');
+
 require __DIR__.'/auth.php';
