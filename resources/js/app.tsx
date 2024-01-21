@@ -7,13 +7,16 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import {ConfigProvider} from "antd";
 import {antdTheme} from "@/antd";
 import { StyleProvider } from '@ant-design/cssinjs';
-import {ConfigContextProvider, ModalsContextProvider, ModalsRender} from "@logicpanel/admin-ui";
+import {ConfigContextProvider, ModalsContextProvider, ModalsRender, withModalForm} from "@logicpanel/admin-ui";
 import React from "react";
 import adminUi from "@/config/admin-ui";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
-const UserFormFake = (props: any) => <div><pre>{JSON.stringify(props,null,2)}</pre></div>
+const UserFormFake = withModalForm({
+    apiResource: "/api/users",
+    title: "Utente",
+})((props: any) => <div><pre>{JSON.stringify(props,null,2)}</pre></div>)
 
 // check if exists backoffice-app element
 const element = document.getElementById('backoffice-app');
