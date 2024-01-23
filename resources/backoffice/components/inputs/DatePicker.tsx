@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import { DatePicker as AnDatePicker } from 'antd'
-import './datePickerStyle.css'
-import { useIntl } from 'react-intl'
+// import './datePickerStyle.css'
+// import { useIntl } from 'react-intl'
 
 const dateFormat = 'DD/MM/YYYY'
 const formatter = (m: any, format: string | null) => {
@@ -11,7 +11,7 @@ const formatter = (m: any, format: string | null) => {
 
 const DatePicker = (props: any) => {
   const { field, form, format = null, disabled, disabledDate } = props
-  const intl = useIntl()
+  // const intl = useIntl()
   const { value } = field
 
   return (
