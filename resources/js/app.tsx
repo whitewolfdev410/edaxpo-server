@@ -12,6 +12,7 @@ import React from "react";
 import adminUi from "../backoffice/config/admin-ui";
 import {modalsRegistry} from "../backoffice/config/modals";
 import {IntlProvider} from "react-intl";
+import {Inspector} from "react-dev-inspector";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -27,7 +28,10 @@ if (!element) {
             root.render(
                 <ConfigProvider theme={antdTheme}>
                     <StyleProvider hashPriority="high">
-                        <App {...props} />
+                        <IntlProvider locale={""} messages={{}}>
+                            <App {...props} />
+                            <Inspector />
+                        </IntlProvider>
                     </StyleProvider>
                 </ConfigProvider>
             );
@@ -56,6 +60,7 @@ if (!element) {
                                     />
                                 </ModalsContextProvider>
                             </ConfigContextProvider>
+                            <Inspector />
                         </IntlProvider>
                     </StyleProvider>
                 </ConfigProvider>
