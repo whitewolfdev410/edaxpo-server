@@ -5,7 +5,7 @@ import {renderDate} from "@b/components/table/renders";
 
 const SearchComponent = (props: any) => {
   return (
-    <div className="py-4 text-right">
+    <div className="mb-2 text-right">
         <Button type="primary" onClick={() => props.onNewClick(0)}>Nuovo</Button>
     </div>
   )
