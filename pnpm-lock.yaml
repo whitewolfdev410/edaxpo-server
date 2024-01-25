@@ -33,6 +33,9 @@ importers:
       '@logicpanel/admin-ui':
         specifier: workspace:^
         version: link:resources/libs/admin-ui
+      '@react-dev-inspector/vite-plugin':
+        specifier: ^2.0.1
+        version: 2.0.1(typescript@5.0.2)(webpack@5.89.0)
       '@tailwindcss/forms':
         specifier: ^0.5.3
         version: 0.5.3(tailwindcss@3.2.1)
@@ -70,8 +73,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
       react-dev-inspector:
-        specifier: ^1.8.1
-        version: 1.8.1(react@18.2.0)(typescript@5.0.2)(webpack@5.89.0)
+        specifier: ^2.0.1
+        version: 2.0.1(react@18.2.0)(typescript@5.0.2)(webpack@5.89.0)
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
@@ -1409,6 +1412,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@babel/types@7.20.5:
+    resolution: {integrity: sha512-c9fst/h2/dcF7H+MJKZ2T0KjEQ8hY/BNnDk/H3XY8C4Aw/eWQXWn/lWntHF9ooUBnGmEvbfGrTgLWc+um0YDUg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-string-parser': 7.23.4
+      '@babel/helper-validator-identifier': 7.22.20
+      to-fast-properties: 2.0.0
+    dev: true
+
   /@babel/types@7.23.6:
     resolution: {integrity: sha512-+uarb83brBzPKN38NX1MkB6vb6+mwvR6amUulqAE7ccQw1pEl+bCia9TbdG1lsnFP7lZySvUn37CHyXQdfTwzg==}
     engines: {node: '>=6.9.0'}
@@ -1950,6 +1962,73 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
+  /@react-dev-inspector/babel-plugin@2.0.1:
+    resolution: {integrity: sha512-V2MzN9dj3uZu6NvAjSxXwa3+FOciVIuwAUwPLpO6ji5xpUyx8E6UiEng1QqzttdpacKHFKtkNYjtQAE+Lsqa5A==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@babel/core': 7.23.7
+      '@babel/generator': 7.23.6
+      '@babel/parser': 7.23.6
+      '@babel/traverse': 7.23.7
+      '@babel/types': 7.20.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@react-dev-inspector/middleware@2.0.1(typescript@5.0.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-qDMtBzAxNNAX01jjU1THZVuNiVB7J1Hjk42k8iLSSwfinc3hk667iqgdzeq1Za1a0V2bF5Ev6D4+nkZ+E1YUrQ==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      react-dev-utils: 12.0.1(typescript@5.0.2)(webpack@5.89.0)
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
+
+  /@react-dev-inspector/umi3-plugin@2.0.1(typescript@5.0.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-lRw65yKQdI/1BwrRXWJEHDJel4DWboOartGmR3S5xiTF+EiOLjmndxdA5LoVSdqbcggdtq5SWcsoZqI0TkhH7Q==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@react-dev-inspector/babel-plugin': 2.0.1
+      '@react-dev-inspector/middleware': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
+
+  /@react-dev-inspector/umi4-plugin@2.0.1(typescript@5.0.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-vTefsJVAZsgpuO9IZ1ZFIoyryVUU+hjV8OPD8DfDU+po5LjVXc5Uncn+MkFOsT24AMpNdDvCnTRYiuSkFn8EsA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@react-dev-inspector/babel-plugin': 2.0.1
+      '@react-dev-inspector/middleware': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
+
+  /@react-dev-inspector/vite-plugin@2.0.1(typescript@5.0.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-J1eI7cIm2IXE6EwhHR1OyoefvobUJEn/vJWEBwOM5uW4JkkLwuVoV9vk++XJyAmKUNQ87gdWZvSWrI2LjfrSug==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@react-dev-inspector/middleware': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
+
   /@remix-run/router@1.9.0:
     resolution: {integrity: sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==}
     engines: {node: '>=14.0.0'}
@@ -2237,6 +2316,12 @@ packages:
 
   /@types/react-dom@18.0.10:
     resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
+    dependencies:
+      '@types/react': 18.2.12
+    dev: true
+
+  /@types/react-reconciler@0.28.8:
+    resolution: {integrity: sha512-SN9c4kxXZonFhbX4hJrZy37yw9e7EIxcpHCxQv5JUS18wDE5ovkQKlqQEkufdJCCMfuI9BnjUJvhYeJ9x5Ra7g==}
     dependencies:
       '@types/react': 18.2.12
     dev: true
@@ -5108,30 +5193,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /react-dev-inspector@1.8.1(react@18.2.0)(typescript@5.0.2)(webpack@5.89.0):
-    resolution: {integrity: sha512-HjUpmeXujsw+B9YRzpufXxlDzzB908Q2XmVQmtUPn6rXurxyZnWQwN4/4UJSswWSVMY2JcVVD+vAQ/xp6tbDCg==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      react: '>=16.8.0'
-    dependencies:
-      '@babel/core': 7.23.7
-      '@babel/generator': 7.23.6
-      '@babel/parser': 7.23.6
-      '@babel/traverse': 7.23.7
-      '@babel/types': 7.23.6
-      hotkeys-js: 3.13.5
-      loader-utils: 2.0.4
-      querystring: 0.2.1
-      react: 18.2.0
-      react-dev-utils: 12.0.1(typescript@5.0.2)(webpack@5.89.0)
-    transitivePeerDependencies:
-      - eslint
-      - supports-color
-      - typescript
-      - vue-template-compiler
-      - webpack
-    dev: true
-
   /react-dev-inspector@1.8.1(react@18.2.0)(typescript@5.3.3)(webpack@5.89.0):
     resolution: {integrity: sha512-HjUpmeXujsw+B9YRzpufXxlDzzB908Q2XmVQmtUPn6rXurxyZnWQwN4/4UJSswWSVMY2JcVVD+vAQ/xp6tbDCg==}
     engines: {node: '>=12.0.0'}
@@ -5148,6 +5209,30 @@ packages:
       querystring: 0.2.1
       react: 18.2.0
       react-dev-utils: 12.0.1(typescript@5.3.3)(webpack@5.89.0)
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
+
+  /react-dev-inspector@2.0.1(react@18.2.0)(typescript@5.0.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-b8PAmbwGFrWcxeaX8wYveqO+VTwTXGJaz/yl9RO31LK1zeLKJVlkkbeLExLnJ6IvhXY1TwL8Q4+gR2GKJ8BI6Q==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      '@react-dev-inspector/babel-plugin': 2.0.1
+      '@react-dev-inspector/middleware': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+      '@react-dev-inspector/umi3-plugin': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+      '@react-dev-inspector/umi4-plugin': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+      '@react-dev-inspector/vite-plugin': 2.0.1(typescript@5.0.2)(webpack@5.89.0)
+      '@types/react-reconciler': 0.28.8
+      hotkeys-js: 3.13.5
+      picocolors: 1.0.0
+      react: 18.2.0
+      react-dev-utils: 12.0.1(typescript@5.0.2)(webpack@5.89.0)
     transitivePeerDependencies:
       - eslint
       - supports-color

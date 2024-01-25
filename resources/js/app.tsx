@@ -7,14 +7,22 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import {ConfigProvider} from "antd";
 import {antdTheme} from "@/antd";
 import { StyleProvider } from '@ant-design/cssinjs';
-import {ConfigContextProvider, ModalsContextProvider, ModalsRender, withModalForm} from "@logicpanel/admin-ui";
+import {ConfigContextProvider, ModalsContextProvider, ModalsRender} from "@logicpanel/admin-ui";
 import React from "react";
 import adminUi from "../backoffice/config/admin-ui";
-import {modalsRegistry} from "../backoffice/config/modals";
 import {IntlProvider} from "react-intl";
-import {Inspector} from "react-dev-inspector";
+// @ts-ignore
+import {gotoEditor, Inspector} from "react-dev-inspector";
+import english from './locales/en-US'
+import italian from './locales/it-IT'
+import {modalsRegistry} from "@b/config/modals";
+import {gotoServerEditor} from "@/goToEditor";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const locales = {
+    en: english,
+    it: italian,
+}
 
 // check if exists backoffice-app element
 const element = document.getElementById('backoffice-app');
@@ -24,13 +32,19 @@ if (!element) {
         resolve: (name) => resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
         setup({ el, App, props }) {
             const root = createRoot(el);
-
+            // todo: set language from user
+            const currentLocale = locales.it
             root.render(
-                <ConfigProvider theme={antdTheme}>
+                <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme}>
                     <StyleProvider hashPriority="high">
-                        <IntlProvider locale={""} messages={{}}>
+                        <IntlProvider locale={currentLocale.locale} messages={currentLocale.messages}>
                             <App {...props} />
-                            <Inspector />
+                            <Inspector
+                                disableLaunchEditor={true}
+                                onClickElement={({codeInfo}) =>{
+                                    gotoServerEditor(codeInfo)
+                                }}
+                            />
                         </IntlProvider>
                     </StyleProvider>
                 </ConfigProvider>
@@ -48,10 +62,12 @@ if (!element) {
         setup({ el, App, props }) {
             const root = createRoot(el);
 
+            // todo: set language from user
+            const currentLocale = locales.it
             root.render(
-                <ConfigProvider theme={antdTheme}>
+                <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme}>
                     <StyleProvider hashPriority="high">
-                        <IntlProvider locale={""} messages={{}}>
+                        <IntlProvider locale={currentLocale.locale} messages={currentLocale.messages}>
                             <ConfigContextProvider config={adminUi(null)}>
                                 <ModalsContextProvider>
                                     <App {...props} />
@@ -60,7 +76,12 @@ if (!element) {
                                     />
                                 </ModalsContextProvider>
                             </ConfigContextProvider>
-                            <Inspector />
+                            <Inspector
+                                disableLaunchEditor={true}
+                                onClickElement={({codeInfo}) =>{
+                                    gotoServerEditor(codeInfo)
+                                }}
+                            />
                         </IntlProvider>
                     </StyleProvider>
                 </ConfigProvider>
