@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backoffice\AdminUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormConfiguratioController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -17,5 +18,7 @@ Route::group([
     Route::patch('/users/{id}', [AdminUserController::class, 'patchItem']);
     Route::delete('/users/{id}', [AdminUserController::class, 'deleteItem']);
     Route::post('/users', [AdminUserController::class, 'create']);
+
+    Route::get('/form/{key}', [FormConfiguratioController::class, 'get']);
 
 });

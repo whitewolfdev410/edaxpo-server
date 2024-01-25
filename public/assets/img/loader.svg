@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170.967" height="170.954" viewBox="0 0 170.967 170.954">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.377" gradientTransform="translate(-0.854) scale(2.707 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8e8e8"/>
+      <stop offset="1" stop-color="#4a4a4a"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.473" stop-color="#dc0038"/>
+      <stop offset="1" stop-color="#990015"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.377" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="0.5" cy="0.5" r="1.02" gradientTransform="translate(0.315) scale(0.369 1)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Raggruppa_79" data-name="Raggruppa 79" transform="translate(-134.46 -568.035)">
+    <path id="Tracciato_146" data-name="Tracciato 146" d="M252.585,266.388a59.147,59.147,0,0,1,16.472-40.945l-20.225-20.064a87.651,87.651,0,0,0-.337,121.667l20.251-20.053A59.137,59.137,0,0,1,252.585,266.388Z" transform="translate(-89.655 407.25)" fill="url(#radial-gradient)"/>
+    <path id="Tracciato_147" data-name="Tracciato 147" d="M321.5,288.21a59.147,59.147,0,0,1-40.945-16.471l-20.065,20.224a87.648,87.648,0,0,0,121.667.337l-20.053-20.251A59.132,59.132,0,0,1,321.5,288.21Z" transform="translate(-81.401 422.308)" fill="url(#linear-gradient)"/>
+    <path id="Tracciato_148" data-name="Tracciato 148" d="M343.3,233.514a59.15,59.15,0,0,1-16.471,40.945l20.224,20.063a87.648,87.648,0,0,0,.337-121.667L327.143,192.91A59.134,59.134,0,0,1,343.3,233.514Z" transform="translate(-66.349 399.872)" fill="url(#radial-gradient-2)"/>
+    <path id="Tracciato_149" data-name="Tracciato 149" d="M288.577,197.5a59.147,59.147,0,0,1,40.945,16.471l20.065-20.224a87.651,87.651,0,0,0-121.667-.337l20.053,20.251A59.137,59.137,0,0,1,288.577,197.5Z" transform="translate(-88.792 399.003)" fill="url(#radial-gradient-3)"/>
+  </g>
+</svg>

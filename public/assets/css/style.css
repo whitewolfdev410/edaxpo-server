@@ -1,0 +1,39 @@
+.parallaxed {
+    margin-top: 120px !important;
+    z-index: 1;
+}
+
+.parallax {
+    min-height: 200px;
+    position: fixed;
+    z-index: 0;
+}
+
+.navigation-panel {
+    background: black;
+    color: white;
+    font-weight: 600;
+}
+
+
+.template .nav-item,
+.template .nav-link {
+    background: black !important;
+    color: #fff !important;
+}
+
+.template .nav-item .active {
+    background: #e52147 !important;
+    font-weight: bold !important;
+    color: #fff !important;
+}
+
+h1.primary,
+h2.primary {
+    color: #E52148 !important;
+}
+
+button.primary:hover {
+    background:
+        #E52148 !important;
+}
