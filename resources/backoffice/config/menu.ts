@@ -1,17 +1,60 @@
-export const menuItems = [
+import {ICON_INDEX} from "@b/config/icons";
+
+type MenuItem = {
+    label: string,
+    icon: keyof typeof ICON_INDEX,
+    url: string
+}
+
+export const menuItems: MenuItem[] = [
     {
         "label": "Dashboard",
-        "icon": "fa fa-tachometer-alt",
+        "icon": "dashboard",
         "url": "/dashboard"
     },
     {
-        "label": "Users",
-        "icon": "fa fa-users",
+        "label": "Annunci",
+        "icon": "advertising",
+        "url": "/components"
+    },
+    {
+        "label": "Segnalazioni",
+        "icon": "exclamation",
+        "url": "/components"
+    },
+    {
+        "label": "Richieste contatto",
+        "icon": "list",
+        "url": "/components"
+    },
+    {
+        "label": "Componenti",
+        "icon": "layerGroup",
+        "url": "/components"
+    },
+    {
+        "label": "Marche",
+        "icon": "copy",
+        "url": "/components"
+    },
+    {
+        "label": "Modelli",
+        "icon": "listCheck",
+        "url": "/components"
+    },
+    {
+        "label": "Categorie",
+        "icon": "layerGroup",
+        "url": "/categories"
+    },
+    {
+        "label": "Utenti",
+        "icon": "users",
         "url": "/users"
     },
     {
         "label": "Roles",
-        "icon": "fa fa-user-tag",
+        "icon": "dashboard",
         "url": "/roles"
     }
 ]
