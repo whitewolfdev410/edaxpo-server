@@ -85,18 +85,24 @@ return new class extends Migration
         // Vehicles Table
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->string('type');
-            $table->string('category');
-            $table->integer('ports');
             $table->string('brand');
             $table->string('model');
-            $table->string('version');
-            $table->integer('production');
-            $table->integer('year');
+            $table->integer('marchi_id');
+            $table->integer('modelli_id');
+            $table->integer('yearFrom');
+            $table->integer('yearTo');
+            $table->integer('active')->default('1');;
             $table->string('engine');
+            $table->string('true_engine')->default('');;
             $table->string('power');
+            $table->string('kw')->default('0');;
             $table->string('images');
+            $table->string('modelImages');
+            $table->string('category')->default('');
+            $table->integer('ports')->default('0');
+            $table->string('version')->nullable();
+            $table->integer('production')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

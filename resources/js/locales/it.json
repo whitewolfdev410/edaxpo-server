@@ -1,3 +1,36 @@
 {
-    "global.hello": "Ciao"
+    "global.hello": "Ciao",
+    "form": {
+        "moto": {
+            "model": "Scrivi il tuo modello di moto",
+            "usage": "Il tuo veicolo è: ",
+            "image": "",
+            "status": "Incidentata",
+            "price": "Prezzo",
+            "vat": "Più iva",
+            "images": "Foto - 0/10 - Puoi aggiungere fino a 10 foto",
+            "video": "Video",
+            "description": "Descrizione",
+            "chassis": "Telaio",
+            "license_plate": "Targa",
+            "warranty": "Garanzia",
+            "law": "Normativa antinquinamento",
+            "accessories": "Accessori",
+            "features": "Altre caratteristiche",
+            "main_color": "Colore primario",
+            "secondary_color": "Colore secondario",
+            "metal_color": "Metallizzato",
+            "front_wear": "Usura pneumatico anteriore",
+            "rear_wear": "Usura pneumatico posteriore",
+            "general": "Condizioni generali",
+            "country": "Indirizzo",
+            "payment_method": "Metodo di pagamento",
+            "contact": "Persona di riferimento",
+            "prefix": "Prefisso",
+            "phone": "N. telefono",
+            "showNumber": "Vuoi che il tuo annuncio sia visibile anche all'estero?",
+            "showSpotInCountries": "Vuoi che il tuo annuncio sia visibile anche all'estero?",
+            "showDealersBid": "Vuoi ricevere offerte d'acquisto dai Dealer senza l'obbligo di acquisto di un'altra moto?"
+        }
+    }
 }

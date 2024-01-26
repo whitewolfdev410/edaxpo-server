@@ -4,7 +4,7 @@
 @include('header')
 
 <body class="antialiased">
-    <div class="col-12">
+    <div class="col-12 qui">
         @include('navbar')
         @include('search')
     </div>

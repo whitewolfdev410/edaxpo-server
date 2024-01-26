@@ -17,17 +17,30 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
+    return view('login');
+    /*
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
+    */
 });
+
+Route::get('home', function () {
+    return view('home');
+
+});
+
+Route::get('/form', function () {
+    return Inertia::render('Website/Form');
+})->name('form');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->name('form');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

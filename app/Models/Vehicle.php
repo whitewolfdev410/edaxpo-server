@@ -10,17 +10,23 @@ class Vehicle extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name',
         'type',
-        'category',
-        'ports',
         'brand',
         'model',
-        'version',
-        'production',
-        'year',
+        'marchi_id',
+        'modelli_id',
+        'yearFrom',
+        'yearTo',
+        'active',
         'engine',
+        'true_engine',
         'power',
+        'kw',
         'images',
+        'modelImages',
+        'category',
+        'ports',
+        'version',
+        'production'
     ];
 }

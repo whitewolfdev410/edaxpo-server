@@ -26,7 +26,19 @@
             </li>
         </ul>
         <div class="tab-content" style="background: black;margin-top: 5px;">
-            <div class="tab-pane fade show active col-10 m-auto p-4" id="home" role="tabpanel"
+
+            <div class="tab-pane fade col-10 m-auto p-4 flex-column gap-3" id="moto" role="tabpanel"
+                aria-labelledby="home-tab">
+                <h2 class="primary">ANNUNCI MOTO</h2>
+                <div>
+                    <label for="exampleInputEmail1">Inserisci un nuovo annuncio per moto</label>
+                </div>
+                <div>
+                    <iframe src="/form"></iframe>
+                </div>
+            </div>
+
+            <div class="tab-pane fade show active col-10 m-auto p-4" id="ricambi" role="tabpanel"
                 aria-labelledby="home-tab">
                 <h2 class="primary">RICAMBI MOTO</h2>
                 <div>
@@ -62,8 +74,9 @@
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">sez2</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">sez3</div>
+
+            <div class="tab-pane fade" id="auto" role="tabpanel" aria-labelledby="profile-tab">sez2</div>
+            <div class="tab-pane fade" id="camion" role="tabpanel" aria-labelledby="contact-tab">sez3</div>
         </div>
     </div>
 
