@@ -3,13 +3,17 @@ import { MoreOutlined } from "@ant-design/icons";
 import HorizontalLayoutPage from "../components/layout/HorizontalLayoutPage";
 import {apiClient} from "../services/http/client";
 import CrudDialog from "@b/components/dialog/CrudDialog";
+import {notification} from "antd";
 
 const showResponseMessage = (data: {
   error: boolean
   message: string
 }) => {
-  alert(data.message)
-  // showNotification(data.error ? 'error' : 'success', data.message)
+    notification[data.error ? 'error' : 'success']({
+        // message: data.error ? 'Errore' : 'Successo',
+        message: data.message,
+        placement: 'topRight'
+    })
 }
 
 const adminUiConfig = (navigate: any): ConfigContextType => ({
