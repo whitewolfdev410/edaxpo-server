@@ -28,6 +28,7 @@ class Spot extends Model
 
     protected $casts = [
         'meta_data' => 'array',
+        'data' => 'array',
     ];
 
     public function author(): BelongsTo

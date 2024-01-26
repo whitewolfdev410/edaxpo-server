@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Services\Crud\CollectionPaginator;
 use App\Services\Crud\CollectionPaginatorOptions;
+use App\Services\Crud\ItemProvider;
+use App\Services\Crud\ItemProviderOptions;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -18,8 +20,8 @@ class AdminUserController extends Controller
         return $collectionPaginator->toArray($options);
     }
 
-    public function item($id) {
-        return User::find($id);
+    public function item($id, ItemProvider $itemProvider) {
+        return $itemProvider->byId($id, new ItemProviderOptions(User::class));
     }
 
     public function patchItem(Request $request, $id)

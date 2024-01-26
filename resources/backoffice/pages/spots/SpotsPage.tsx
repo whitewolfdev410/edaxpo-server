@@ -23,6 +23,28 @@ export default function SpotsPage() {
           searchComponent={SearchComponent}
           tableColumns={[
               {
+                  title: 'ID',
+                  dataIndex: 'id',
+                    width: 80,
+                  className: 'text-center',
+              },
+              {
+                  title: '',
+                  dataIndex: 'cover',
+                  width: 80,
+                  className: 'text-center',
+                  render: (r: string) => <Avatar src={r} shape="square"   size={64} icon={<VerifiedEmailIcon />} />
+              },
+              {
+                  title: 'titolo',
+                  dataIndex: 'title',
+                  width: 140,
+              },
+              {
+                  title: 'descrizione',
+                  dataIndex: 'desc',
+              },
+              {
                   title: 'Created At',
                   dataIndex: 'created_at',
                   width: 150,
