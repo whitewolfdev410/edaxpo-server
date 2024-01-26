@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backoffice\AdminSpotController;
 use App\Http\Controllers\Backoffice\AdminUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,13 @@ Route::group([
     Route::delete('/users/{id}', [AdminUserController::class, 'deleteItem']);
     Route::post('/users', [AdminUserController::class, 'create']);
 
-    Route::get('/form/{key}', [FormConfiguratioController::class, 'get']);
+    // jobs
+    Route::get('/spots', [AdminSpotController::class, 'items']);
+    Route::get('/spots/{id}', [AdminSpotController::class, 'item']);
+    Route::patch('/spots/{id}', [AdminSpotController::class, 'patchItem']);
+    Route::delete('/spots/{id}', [AdminSpotController::class, 'deleteItem']);
+    Route::post('/spots', [AdminSpotController::class, 'create']);
 
+    Route::get('/form/{key}', [FormConfiguratioController::class, 'get']);
 });
+

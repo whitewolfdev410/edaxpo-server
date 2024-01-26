@@ -15,7 +15,7 @@ export const menuItems: MenuItem[] = [
     {
         "label": "Annunci",
         "icon": "advertising",
-        "url": "/components"
+        "url": "/spots"
     },
     {
         "label": "Segnalazioni",
