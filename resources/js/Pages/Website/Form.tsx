@@ -1,30 +1,35 @@
-import { Flex, Layout } from 'antd';
 import React from 'react';
+import {Tabs, TabsProps} from "antd";
+import {MotoIcon} from "@/Components/Icons/MotoIcon";
 
-const { Content } = Layout;
-
-const contentStyle: React.CSSProperties = {
-    textAlign: 'center',
-    minHeight: 120,
-    lineHeight: '120px',
+const onChange = (key: string) => {
+    console.log(key);
 };
 
-
-
-const layoutStyle = {
-    borderRadius: 8,
-    overflow: 'hidden',
-    width: 'calc(50% - 8px)',
-    maxWidth: 'calc(50% - 8px)',
-};
+const items: TabsProps['items'] = [
+    {
+        key: '1',
+        label: <span className="text-gray-800"><MotoIcon /></span>,
+        children: 'Content of Tab Pane 1',
+    },
+    {
+        key: '2',
+        label: <span className="text-gray-800"><MotoIcon/></span>,
+        children: 'Content of Tab Pane 2',
+    },
+    {
+        key: '3',
+        label: <span className="text-gray-800"><MotoIcon/></span>,
+        children: 'Content of Tab Pane 3',
+    },
+];
 
 export default function Form() {
     return (
-        <Flex gap="middle" wrap="wrap">
-            <Layout style={layoutStyle}>
-                <Content style={contentStyle}>Content</Content>
-            </Layout>
-
-        </Flex>
+        <div className="max-w-[1100px] mx-auto mt-4">
+            <div className="bg-white rounded shadow-2xl p-4">
+                <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+            </div>
+        </div>
     );
 }

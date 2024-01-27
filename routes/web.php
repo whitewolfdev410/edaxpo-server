@@ -29,13 +29,13 @@ Route::get('/', function () {
 });
 
 Route::get('home', function () {
-    return view('home');
-
+    // return view('home');
+    return Inertia::render('Website/Form');
 });
 
-Route::get('/form', function () {
-    return Inertia::render('Website/Form');
-})->name('form');
+Route::middleware('auth')->get('/form', function () {
+    return Inertia::render('Website/CreateSpot');
+})->name('create-spot');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

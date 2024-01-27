@@ -1,10 +1,9 @@
 <style>
-.wrapper {
-    background: #666666;
-    color: white;
-}
+    .wrapper {
+        background: #666666;
+        color: white;
+    }
 </style>
-<div class="col-12 d-flex flex-column justify-content-center wrapper" style="height:100vh">
     <div class="col-12" style="background:#FF0000">
         <div class="parallax m-auto col-12 text-center" style="background:#FF0000">
             <img src="/assets/img/banner-header.jpg">
