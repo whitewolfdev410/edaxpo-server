@@ -2,6 +2,7 @@ import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
 import {Avatar, Button} from "antd";
 import {renderDate} from "@b/components/table/renders";
+import {VerifiedEmailIcon} from "@b/config/icons";
 
 const SearchComponent = (props: any) => {
   return (
@@ -33,7 +34,7 @@ export default function UsersPage() {
                               </div>
                               <div>
                                   <div>{row.first_name} {row.last_name}</div>
-                                  <div>{row.email}</div>
+                                  <div><VerifiedEmailIcon className={row.email_verified_at ? "text-green-500" : "text-red-500"} /> {row.email}</div>
                               </div>
                           </div>
                       )
