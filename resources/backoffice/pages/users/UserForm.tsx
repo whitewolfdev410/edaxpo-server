@@ -6,7 +6,7 @@ import Switch from "@b/components/inputs/Switch";
 
 const UserForm = (props: any) => {
     return (
-        <div>
+        <div className=' grid grid-cols-2 gap-x-4'>
             <Field component={InputText} name="first_name" label="Nome" />
             <Field component={InputText} name="last_name" label="Cognome" />
             <Field component={InputText} name="email" label="Email" />
