@@ -8,8 +8,8 @@ import {Field} from "@b/components/form/Field";
 
 const SearchComponent = (props: any) => {
   return (
-    <div className="mb-2 text-right">
-        <Button type="primary" onClick={() => props.onNewClick(0)}>Nuovo</Button>
+    <div className="m-4 text-right">
+        <Button type="primary" onClick={() => props.onNewClick(0)}>+ Aggiungi utente</Button>
     </div>
   )
 }
@@ -41,7 +41,7 @@ export default function UsersPage() {
                                   <Avatar size={50} shape="square" src={row.imageUrl}/>
                               </div>
                               <div>
-                                  <div>{row.first_name} {row.last_name}</div>
+                                  <div className='font-semibold text-[18px]'>{row.first_name} {row.last_name}</div>
                                   <div><VerifiedEmailIcon className={row.email_verified_at ? "text-green-500" : "text-red-500"} /> {row.email}</div>
                               </div>
                           </div>
@@ -49,8 +49,9 @@ export default function UsersPage() {
                   },
               },
               {
-                  title: 'Username',
+                  title: 'Email',
                   dataIndex: 'email',
+                  className: 'text-black'
               },
               {
                   title: 'Ruolo',
@@ -59,7 +60,8 @@ export default function UsersPage() {
               {
                   title: 'Data Registrazione',
                   dataIndex: 'created_at',
-                  render: renderDate
+                  render: renderDate,
+                  className: 'text-black'
               },
               {
                   title: 'Attivo',
