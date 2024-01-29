@@ -20,10 +20,11 @@ export const PageActionButtons = ({ showDeleteButton = true, showSaveButton = tr
           <Button
             key='delete'
             onClick={handleDelete}
-            color='outline-danger'
+            type={'primary'}
             loading={remote.deletingItem}
+            danger
           >
-            {buttons.deleteLabel || <FormattedMessage id={'global.delete'} />}
+            {buttons.deleteLabel || <FormattedMessage id={'Elimina'} />}
           </Button>
         )}
       {(buttons.close) && (

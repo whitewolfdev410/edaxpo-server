@@ -6,6 +6,7 @@ import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import {ConfigProvider} from "antd";
 import {antdTheme} from "@/antd";
+import {antdTheme as antdTheme2} from "@b/config/antd";
 import { StyleProvider } from '@ant-design/cssinjs';
 import {ConfigContextProvider, ModalsContextProvider, ModalsRender} from "@logicpanel/admin-ui";
 import React from "react";
@@ -65,7 +66,7 @@ if (!element) {
             // todo: set language from user
             const currentLocale = locales.it
             root.render(
-                <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme}>
+                <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme2}>
                     <StyleProvider hashPriority="high">
                         <IntlProvider locale={currentLocale.locale} messages={currentLocale.messages}>
                             <ConfigContextProvider config={adminUi(null)}>
