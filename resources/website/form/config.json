@@ -265,14 +265,14 @@
                 {
                     "id": 9,
                     "form_configuration_id": 12,
-                    "name": "No",
+                    "label": "No",
                     "value": "No",
                     "checked": 1
                 },
                 {
                     "id": 10,
                     "form_configuration_id": 12,
-                    "name": "Si",
+                    "label": "Si",
                     "value": "Si",
                     "checked": 0
                 }

@@ -2,10 +2,11 @@ import { Field } from "@b/components/form/Field";
 import InputRadio from "@b/components/inputs/InputRadio";
 import InputText from "@b/components/inputs/InputText";
 import { apiClient } from "@b/services/http/client";
-import { Flex, Form, Select, Skeleton } from "antd";
+import {Flex, Form, Select, Skeleton, Tabs, TabsProps} from "antd";
 import { randomUUID } from "crypto";
 import { Formik } from "formik";
 import React, { useEffect } from 'react';
+import {MotoIcon} from "@/Components/Icons/MotoIcon";
 
 export interface FormConfiguration {
     id: number
@@ -29,8 +30,8 @@ export interface FormConfiguration {
 }
 const baseStyle: React.CSSProperties = {
     width: '40%',
-    height: 54,
 };
+
 export default function CreateSpot() {
     const [spotType, setSpotType] = React.useState<any>(null)
 
@@ -42,6 +43,39 @@ export default function CreateSpot() {
         </div>
     )
 
+}
+
+const onChange = (key: string) => {
+    console.log(key);
+};
+
+const PartialForm = ({config}: any)  => {
+    return (
+        <Flex wrap="wrap" gap="small"  key={'contentf'}>
+            {config.map((el: FormConfiguration) => {
+                switch (el.type) {
+                    case 'text':
+                        return (
+                            <div style={{ ...baseStyle }}>
+                                <Field name={el.name} label={el.label} component={InputText} />
+                            </div>
+                        )
+                    case 'select':
+                        return (
+                            <div style={{ ...baseStyle }}>
+                                <Field name={el.name} className={'w-[120px]'} label={el.label} options={el.options} component={Select} />
+                            </div>
+                        )
+                    case 'radio':
+                        return (
+                            <div style={{ ...baseStyle }}>
+                                <Field name={el.name} label={el.label} options={el.options} component={InputRadio} />
+                            </div>
+                        )
+                }
+            })}
+        </Flex>
+    )
 }
 
 function CreateMoto() {
@@ -67,38 +101,34 @@ function CreateMoto() {
     if (config === null) return (
         <Skeleton active />
     )
+
+    const items: TabsProps['items'] = [
+        {
+            key: '1',
+            label: <span className="text-gray-800"><MotoIcon /></span>,
+            children: <PartialForm config={config[0]} />,
+        },
+        {
+            key: '2',
+            label: <span className="text-gray-800"><MotoIcon /></span>,
+            children: <PartialForm config={config[1]} />,
+        },
+        {
+            key: '3',
+            label: <span className="text-gray-800"><MotoIcon /></span>,
+            children: <PartialForm config={config[2]} />,
+        },
+    ];
+
     return (
 
         <Formik initialValues={{}} onSubmit={onSubmit}>
             <Form>
-                <Flex wrap="wrap" gap="small"  key={'contentf'}>
-                    {config[2].map((el: FormConfiguration) => {
-
-                        switch (el.type) {
-                            case 'text':
-                                case 'text':
-                                    return (
-                                        <div style={{ ...baseStyle }}>
-                                            <Field name="{el.name}" defaultValue={el.default} label={el.label} component={InputText} />
-                                        </div>
-                                    )
-                                case 'select':
-                                    return (
-                                        <div style={{ ...baseStyle }}>
-                                            <Field name="{el.name}" className={'w-[120px]'} label={el.label} options={el.options} component={Select} />
-                                        </div>
-                                    )
-                                case 'radio':
-                                    return (
-                                        <div style={{ ...baseStyle }}>
-                                            <Field name="{el.name}" label={el.label} options={el.options} component={InputRadio} />
-                                        </div>
-                                    )
-
-                        }
-
-                    })}
-                </Flex>
+                <Tabs
+                    defaultActiveKey="1"
+                    items={items}
+                    onChange={onChange}
+                />
             </Form>
         </Formik>
 
