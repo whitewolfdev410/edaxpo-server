@@ -1,8 +1,11 @@
-import {ComponentType, ReactNode} from "react";
-import {Field as FKField} from "formik";
+import { Field as FKField } from "formik";
+import { ComponentType, ReactNode } from "react";
 
 type FieldProps = {
     label?: ReactNode;
+    defaultValue?: string;
+    className?: string;
+    options?: any[];
     name: string;
     component?: ComponentType<any>;
 }
@@ -12,7 +15,7 @@ export const Field = (props: FieldProps) => {
     return (
         <div>
             <div className="font-semibold">{props.label}</div>
-            <FKField name={props.name} component={Component} />
+            <FKField className={props.className} name={props.name} defaultValue={props.defaultValue} options={props.options} component={Component} />
         </div>
     )
 }

@@ -12,12 +12,24 @@ class FormConfiguratioController extends Controller
 {
     public function get(Request $request, $key)
     {
-        return  ["qweqwe"];
         $response = FormConfiguration::where('spot_type', $key)->orderBy('ordern', 'ASC')->get();
-        for($i = 0; $i < count($response) - 1;$i++) {
-            $response['options'] = FormConfigurationOption::where("form_configuration_id", $response[$i]->id)->get();
+        $rows = [];
+        foreach($response as $r) {
+            $item = $r;
+            $item['options'] = FormConfigurationOption::where("form_configuration_id", $r->id)->get();
+            $rows[]= $item;
         }
-        return $response;
+
+        $tabs = [];
+        for($i = 0; $i <= 4; $i++) {
+            $tmp  = [];
+            for($j = 0; $j < (count($rows) - 2); $j++) {
+                if($rows[$j]->group == $i)
+                    $tmp []= $response[$j];
+            }
+            $tabs []= $tmp;
+        }
+        return $tabs;
     }
 
 
