@@ -76,11 +76,24 @@ function CreateMoto() {
 
                         switch (el.type) {
                             case 'text':
-                                return (
-                                    <div style={{ ...baseStyle }}>
-                                        <Field name="{el.name}" key={el.name} defaultValue={el.default} label={el.label} component={InputText} />
-                                    </div>
-                                )
+                                case 'text':
+                                    return (
+                                        <div style={{ ...baseStyle }}>
+                                            <Field name="{el.name}" defaultValue={el.default} label={el.label} component={InputText} />
+                                        </div>
+                                    )
+                                case 'select':
+                                    return (
+                                        <div style={{ ...baseStyle }}>
+                                            <Field name="{el.name}" className={'w-[120px]'} label={el.label} options={el.options} component={Select} />
+                                        </div>
+                                    )
+                                case 'radio':
+                                    return (
+                                        <div style={{ ...baseStyle }}>
+                                            <Field name="{el.name}" label={el.label} options={el.options} component={InputRadio} />
+                                        </div>
+                                    )
 
                         }
 
