@@ -91,11 +91,13 @@ return new class extends Migration
      */
     public function down(): void
     {
+        \DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('item_codes');
         Schema::dropIfExists('components');
         Schema::dropIfExists('categories');
         Schema::dropIfExists('brands');
         Schema::dropIfExists('brand_models');
         Schema::dropIfExists('spot_reports');
+        \DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 };
