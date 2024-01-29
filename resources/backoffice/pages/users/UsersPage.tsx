@@ -3,6 +3,8 @@ import React from "react";
 import {Avatar, Button} from "antd";
 import {renderDate} from "@b/components/table/renders";
 import {VerifiedEmailIcon} from "@b/config/icons";
+import Switch from "@b/components/inputs/Switch";
+import {Field} from "@b/components/form/Field";
 
 const SearchComponent = (props: any) => {
   return (
@@ -56,10 +58,16 @@ export default function UsersPage() {
                   width: 150,
               },
               {
-                  title: 'Created At',
+                  title: 'Data Registrazione',
                   dataIndex: 'created_at',
                   width: 150,
                   render: renderDate
+              },
+              {
+                  title: 'Attivo',
+                  dataIndex: 'active',
+                  width: 100,
+                  render: Switch
               },
               {
                   dataIndex: '_action',

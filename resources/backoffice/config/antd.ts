@@ -1,10 +1,11 @@
 export const antdTheme = {
     token: {
-        // Seed Token
-        // colorPrimary: '#00b96b',
+        fontFamily: 'Poppins, sans-serif',
         borderRadius: 2,
 
-        // Alias Token
-        // colorBgContainer: '#f6ffed',
+        Input:{
+            borderRadius: 8,
+        },
+
     },
 }
