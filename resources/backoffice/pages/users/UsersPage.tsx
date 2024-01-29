@@ -24,6 +24,11 @@ export default function UsersPage() {
           searchComponent={SearchComponent}
           tableColumns={[
               {
+                  title: 'Id',
+                  dataIndex: 'id',
+                  width: 50,
+              },
+              {
                   title: 'Nominativo',
                   dataIndex: 'fullName',
                   render (fullName: string, row: any) {
@@ -41,19 +46,24 @@ export default function UsersPage() {
                   },
               },
               {
-                  title: 'Created At',
-                  dataIndex: 'created_at',
+                  title: 'Username',
+                  dataIndex: 'email',
                   width: 150,
-                  className: 'text-center',
-                  render: renderDate
+              },
+              {
+                  title: 'Ruolo',
+                  dataIndex: 'role',
+                  width: 150,
               },
               {
                   title: 'Created At',
-                  dataIndex: 'updated_at',
+                  dataIndex: 'created_at',
                   width: 150,
-                  className: 'text-center',
                   render: renderDate
               },
+              {
+                  dataIndex: '_action',
+              }
           ]}
       />
   )
