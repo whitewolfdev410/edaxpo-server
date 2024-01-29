@@ -38,7 +38,7 @@ if (useTs) {
     babel({
       presets: ['@babel/preset-env', ['@babel/preset-react', { development: true }]],
       plugins: [[
-        'react-dev-inspector/plugins/babel',
+        require.resolve('react-dev-inspector/plugins/babel'),
         {
           excludes: [
             /node_modules/,
@@ -90,7 +90,7 @@ if (useTs) {
 
 const inputOptions = {
   input: inputPath,
-  external: ['react', 'react-dom', 'formik', 'antd' ,'date-fns', 'react-router-dom', 'qs', 'react-helmet'],
+  external: ['react', 'react-dom', 'formik', 'antd' ,'recompose','date-fns', 'react-router-dom', 'qs', 'react-helmet'],
   plugins,
 }
 
