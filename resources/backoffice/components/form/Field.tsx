@@ -14,7 +14,7 @@ export const Field = ({name, label, component, ...rest}: FieldProps) => {
     const Component = component;
     return (
         <div className="mb-4">
-            <div className="font-semibold">{label}</div>
+            <div className="text-[#707070] font-semibold">{label}</div>
             <FKField name={name} component={Component} {...rest} />
         </div>
     )

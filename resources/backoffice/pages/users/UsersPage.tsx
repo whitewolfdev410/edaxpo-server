@@ -21,7 +21,7 @@ export default function UsersPage() {
           apiResource={'/api/users'}
           tableApiResource={'/api/users/instructors'}
           modalKey={'user'}
-          pageTitle={'Admin utenti'}
+          pageTitle={'Utenti'}
           // tableHeader={false}
           searchComponent={SearchComponent}
           tableColumns={[
@@ -33,6 +33,7 @@ export default function UsersPage() {
               {
                   title: 'Nominativo',
                   dataIndex: 'fullName',
+                  className: '',
                   render (fullName: string, row: any) {
                       return (
                           <div className="flex flex-row p-2 gap-3 items-center">
@@ -50,17 +51,14 @@ export default function UsersPage() {
               {
                   title: 'Username',
                   dataIndex: 'email',
-                  width: 150,
               },
               {
                   title: 'Ruolo',
                   dataIndex: 'role',
-                  width: 150,
               },
               {
                   title: 'Data Registrazione',
                   dataIndex: 'created_at',
-                  width: 150,
                   render: renderDate
               },
               {
