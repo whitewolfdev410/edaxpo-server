@@ -9,6 +9,7 @@ const InputText = (props: any) => {
     <>
       <AntInput
         style={style}
+        key={name}
         className={'h-[36px] w-full'}
         name={name}
         value={value}

@@ -1,0 +1,1229 @@
+[
+    [
+        {
+            "id": 1,
+            "name": "model",
+            "label": "form.moto.model",
+            "type": "autocomplete",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 0,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "1",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 2,
+            "name": "usage",
+            "label": "form.moto.usage",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 0,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "2",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 1,
+                    "form_configuration_id": 2,
+                    "name": "Nuovo",
+                    "value": "Nuovo",
+                    "checked": 0
+                },
+                {
+                    "id": 2,
+                    "form_configuration_id": 2,
+                    "name": "Usato",
+                    "value": "Usato",
+                    "checked": 1
+                },
+                {
+                    "id": 3,
+                    "form_configuration_id": 2,
+                    "name": "Km_zero",
+                    "value": "Km zero",
+                    "checked": 0
+                },
+                {
+                    "id": 4,
+                    "form_configuration_id": 2,
+                    "name": "Test_drive",
+                    "value": "Test drive",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "image",
+            "label": "form.moto.image",
+            "type": "image",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6 m-auto",
+            "showOnValue": null,
+            "group": 0,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "3",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 4,
+            "name": "status",
+            "label": "form.moto.status",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 0,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "4",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 5,
+                    "form_configuration_id": 4,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 1
+                },
+                {
+                    "id": 6,
+                    "form_configuration_id": 4,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": 5,
+            "name": "price",
+            "label": "form.moto.price",
+            "type": "currency",
+            "default": "1.0",
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 1,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "5",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 6,
+            "name": "vat",
+            "label": "form.moto.vat",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 1,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "6",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 7,
+                    "form_configuration_id": 6,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 1
+                },
+                {
+                    "id": 8,
+                    "form_configuration_id": 6,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "images",
+            "label": "form.moto.images",
+            "type": "dropzone",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 1,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "7",
+            "min": "0",
+            "max": null,
+            "options": []
+        }
+    ],
+    [
+        {
+            "id": 10,
+            "name": "chassis",
+            "label": "form.moto.chassis",
+            "type": "text",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "10",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 11,
+            "name": "license_plate",
+            "label": "form.moto.license_plate",
+            "type": "text",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "11",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 12,
+            "name": "warranty",
+            "label": "form.moto.warranty",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "12",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 9,
+                    "form_configuration_id": 12,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 1
+                },
+                {
+                    "id": 10,
+                    "form_configuration_id": 12,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "law",
+            "label": "form.moto.law",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "13",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 11,
+                    "form_configuration_id": 13,
+                    "name": "Zero emissioni",
+                    "value": "Zero emissioni",
+                    "checked": 0
+                },
+                {
+                    "id": 12,
+                    "form_configuration_id": 13,
+                    "name": "Euro_0",
+                    "value": "Euro 0",
+                    "checked": 0
+                },
+                {
+                    "id": 13,
+                    "form_configuration_id": 13,
+                    "name": "Euro_1",
+                    "value": "Euro 1",
+                    "checked": 0
+                },
+                {
+                    "id": 14,
+                    "form_configuration_id": 13,
+                    "name": "Euro_2",
+                    "value": "Euro 2",
+                    "checked": 0
+                },
+                {
+                    "id": 15,
+                    "form_configuration_id": 13,
+                    "name": "Euro_3",
+                    "value": "Euro 3",
+                    "checked": 0
+                },
+                {
+                    "id": 16,
+                    "form_configuration_id": 13,
+                    "name": "Euro_4",
+                    "value": "Euro 4",
+                    "checked": 0
+                },
+                {
+                    "id": 17,
+                    "form_configuration_id": 13,
+                    "name": "Euro_5",
+                    "value": "Euro 5",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "accessories",
+            "label": "form.moto.accessories",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "14",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 15,
+            "name": "features",
+            "label": "form.moto.features",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "15",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 16,
+            "name": "main_color",
+            "label": "form.moto.main_color",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "16",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 18,
+                    "form_configuration_id": 16,
+                    "name": "Arancione",
+                    "value": "#ff7500",
+                    "checked": 0
+                },
+                {
+                    "id": 19,
+                    "form_configuration_id": 16,
+                    "name": "Argento",
+                    "value": "#dcdcdc",
+                    "checked": 0
+                },
+                {
+                    "id": 20,
+                    "form_configuration_id": 16,
+                    "name": "Bianco",
+                    "value": "#ffffff",
+                    "checked": 0
+                },
+                {
+                    "id": 21,
+                    "form_configuration_id": 16,
+                    "name": "Blu_Azzurro",
+                    "value": "#0059b2",
+                    "checked": 0
+                },
+                {
+                    "id": 22,
+                    "form_configuration_id": 16,
+                    "name": "Giallo",
+                    "value": "#f7c81e",
+                    "checked": 0
+                },
+                {
+                    "id": 23,
+                    "form_configuration_id": 16,
+                    "name": "Grigio",
+                    "value": "#949494",
+                    "checked": 0
+                },
+                {
+                    "id": 24,
+                    "form_configuration_id": 16,
+                    "name": "Nero",
+                    "value": "#000000",
+                    "checked": 0
+                },
+                {
+                    "id": 25,
+                    "form_configuration_id": 16,
+                    "name": "Oro",
+                    "value": "#d9a600",
+                    "checked": 0
+                },
+                {
+                    "id": 26,
+                    "form_configuration_id": 16,
+                    "name": "Rosso",
+                    "value": "#d91a2a",
+                    "checked": 0
+                },
+                {
+                    "id": 27,
+                    "form_configuration_id": 16,
+                    "name": "Verde",
+                    "value": "#38a614",
+                    "checked": 0
+                },
+                {
+                    "id": 28,
+                    "form_configuration_id": 16,
+                    "name": "Lilla",
+                    "value": "#c8a2c8",
+                    "checked": 0
+                },
+                {
+                    "id": 29,
+                    "form_configuration_id": 16,
+                    "name": "Bronzo",
+                    "value": "#bf7326",
+                    "checked": 0
+                },
+                {
+                    "id": 30,
+                    "form_configuration_id": 16,
+                    "name": "Marrone",
+                    "value": "#994200",
+                    "checked": 0
+                },
+                {
+                    "id": 31,
+                    "form_configuration_id": 16,
+                    "name": "Rosa",
+                    "value": "#ff69b4",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "secondary_color",
+            "label": "form.moto.secondary_color",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "17",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 32,
+                    "form_configuration_id": 17,
+                    "name": "Arancione",
+                    "value": "#ff7500",
+                    "checked": 0
+                },
+                {
+                    "id": 33,
+                    "form_configuration_id": 17,
+                    "name": "Argento",
+                    "value": "#dcdcdc",
+                    "checked": 0
+                },
+                {
+                    "id": 34,
+                    "form_configuration_id": 17,
+                    "name": "Bianco",
+                    "value": "#ffffff",
+                    "checked": 0
+                },
+                {
+                    "id": 35,
+                    "form_configuration_id": 17,
+                    "name": "Blu_Azzurro",
+                    "value": "#0059b2",
+                    "checked": 0
+                },
+                {
+                    "id": 36,
+                    "form_configuration_id": 17,
+                    "name": "Giallo",
+                    "value": "#f7c81e",
+                    "checked": 0
+                },
+                {
+                    "id": 37,
+                    "form_configuration_id": 17,
+                    "name": "Grigio",
+                    "value": "#949494",
+                    "checked": 0
+                },
+                {
+                    "id": 38,
+                    "form_configuration_id": 17,
+                    "name": "Nero",
+                    "value": "#000000",
+                    "checked": 0
+                },
+                {
+                    "id": 39,
+                    "form_configuration_id": 17,
+                    "name": "Oro",
+                    "value": "#d9a600",
+                    "checked": 0
+                },
+                {
+                    "id": 40,
+                    "form_configuration_id": 17,
+                    "name": "Rosso",
+                    "value": "#d91a2a",
+                    "checked": 0
+                },
+                {
+                    "id": 41,
+                    "form_configuration_id": 17,
+                    "name": "Verde",
+                    "value": "#38a614",
+                    "checked": 0
+                },
+                {
+                    "id": 42,
+                    "form_configuration_id": 17,
+                    "name": "Lilla",
+                    "value": "#c8a2c8",
+                    "checked": 0
+                },
+                {
+                    "id": 43,
+                    "form_configuration_id": 17,
+                    "name": "Bronzo",
+                    "value": "#bf7326",
+                    "checked": 0
+                },
+                {
+                    "id": 44,
+                    "form_configuration_id": 17,
+                    "name": "Marrone",
+                    "value": "#994200",
+                    "checked": 0
+                },
+                {
+                    "id": 45,
+                    "form_configuration_id": 17,
+                    "name": "Rosa",
+                    "value": "#ff69b4",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "metal_color",
+            "label": "form.moto.metal_color",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "18",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 46,
+                    "form_configuration_id": 18,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 1
+                },
+                {
+                    "id": 47,
+                    "form_configuration_id": 18,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "front_wear",
+            "label": "form.moto.front_wear",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": "Info su come calcolare % usura gomma",
+            "spot_type": "moto",
+            "ordern": "19",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 48,
+                    "form_configuration_id": 19,
+                    "name": "10",
+                    "value": "10%",
+                    "checked": 0
+                },
+                {
+                    "id": 49,
+                    "form_configuration_id": 19,
+                    "name": "20",
+                    "value": "20%",
+                    "checked": 0
+                },
+                {
+                    "id": 50,
+                    "form_configuration_id": 19,
+                    "name": "30",
+                    "value": "30%",
+                    "checked": 0
+                },
+                {
+                    "id": 51,
+                    "form_configuration_id": 19,
+                    "name": "40",
+                    "value": "40%",
+                    "checked": 0
+                },
+                {
+                    "id": 52,
+                    "form_configuration_id": 19,
+                    "name": "50",
+                    "value": "50%",
+                    "checked": 0
+                },
+                {
+                    "id": 53,
+                    "form_configuration_id": 19,
+                    "name": "60",
+                    "value": "60%",
+                    "checked": 0
+                },
+                {
+                    "id": 54,
+                    "form_configuration_id": 19,
+                    "name": "70",
+                    "value": "70%",
+                    "checked": 0
+                },
+                {
+                    "id": 55,
+                    "form_configuration_id": 19,
+                    "name": "80",
+                    "value": "80%",
+                    "checked": 0
+                },
+                {
+                    "id": 56,
+                    "form_configuration_id": 19,
+                    "name": "90",
+                    "value": "90%",
+                    "checked": 0
+                },
+                {
+                    "id": 57,
+                    "form_configuration_id": 19,
+                    "name": "100",
+                    "value": "100%",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "rear_wear",
+            "label": "form.moto.rear_wear",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": "Info su come calcolare % usura gomma",
+            "spot_type": "moto",
+            "ordern": "20",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 58,
+                    "form_configuration_id": 20,
+                    "name": "10",
+                    "value": "10%",
+                    "checked": 0
+                },
+                {
+                    "id": 59,
+                    "form_configuration_id": 20,
+                    "name": "20",
+                    "value": "20%",
+                    "checked": 0
+                },
+                {
+                    "id": 60,
+                    "form_configuration_id": 20,
+                    "name": "30",
+                    "value": "30%",
+                    "checked": 0
+                },
+                {
+                    "id": 61,
+                    "form_configuration_id": 20,
+                    "name": "40",
+                    "value": "40%",
+                    "checked": 0
+                },
+                {
+                    "id": 62,
+                    "form_configuration_id": 20,
+                    "name": "50",
+                    "value": "50%",
+                    "checked": 0
+                },
+                {
+                    "id": 63,
+                    "form_configuration_id": 20,
+                    "name": "60",
+                    "value": "60%",
+                    "checked": 0
+                },
+                {
+                    "id": 64,
+                    "form_configuration_id": 20,
+                    "name": "70",
+                    "value": "70%",
+                    "checked": 0
+                },
+                {
+                    "id": 65,
+                    "form_configuration_id": 20,
+                    "name": "80",
+                    "value": "80%",
+                    "checked": 0
+                },
+                {
+                    "id": 66,
+                    "form_configuration_id": 20,
+                    "name": "90",
+                    "value": "90%",
+                    "checked": 0
+                },
+                {
+                    "id": 67,
+                    "form_configuration_id": 20,
+                    "name": "100",
+                    "value": "100%",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "general",
+            "label": "form.moto.general",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 2,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "21",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 68,
+                    "form_configuration_id": 21,
+                    "name": "general_0",
+                    "value": "90\/100 - Ottime",
+                    "checked": 0
+                },
+                {
+                    "id": 69,
+                    "form_configuration_id": 21,
+                    "name": "general_1",
+                    "value": "80\/89 - Buone",
+                    "checked": 0
+                },
+                {
+                    "id": 70,
+                    "form_configuration_id": 21,
+                    "name": "general_2",
+                    "value": "70\/79 - Discrete",
+                    "checked": 0
+                },
+                {
+                    "id": 71,
+                    "form_configuration_id": 21,
+                    "name": "general_3",
+                    "value": "60\/69 - Sufficenti",
+                    "checked": 0
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": 22,
+            "name": "country",
+            "label": "form.moto.country",
+            "type": "map",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 3,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "22",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 23,
+            "name": "region",
+            "label": "Regione",
+            "type": "hidden",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 3,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "23",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 24,
+            "name": "cap",
+            "label": "Cap",
+            "type": "hidden",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 3,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "24",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 25,
+            "name": "city",
+            "label": "Citt\u00e0",
+            "type": "hidden",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 3,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "25",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 26,
+            "name": "province",
+            "label": "Provincia",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 3,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "26",
+            "min": "0",
+            "max": null,
+            "options": []
+        }
+    ],
+    [
+        {
+            "id": 27,
+            "name": "payment_method",
+            "label": "form.moto.payment_method",
+            "type": "checkbox",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-6",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "27",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 72,
+                    "form_configuration_id": 27,
+                    "name": "Bonifico",
+                    "value": "Bonifico",
+                    "checked": 0
+                },
+                {
+                    "id": 73,
+                    "form_configuration_id": 27,
+                    "name": "Carta di credito",
+                    "value": "Carta di credito",
+                    "checked": 0
+                },
+                {
+                    "id": 74,
+                    "form_configuration_id": 27,
+                    "name": "Contanti",
+                    "value": "Contanti",
+                    "checked": 0
+                },
+                {
+                    "id": 75,
+                    "form_configuration_id": 27,
+                    "name": "Contrassegno",
+                    "value": "Contrassegno",
+                    "checked": 0
+                },
+                {
+                    "id": 76,
+                    "form_configuration_id": 27,
+                    "name": "Paypal",
+                    "value": "Paypal",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "contact",
+            "label": "form.moto.contact",
+            "type": "text",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "28",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 29,
+            "name": "prefix",
+            "label": "form.moto.prefix",
+            "type": "select",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "29",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 77,
+                    "form_configuration_id": 29,
+                    "name": "+39",
+                    "value": "+39",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "phone",
+            "label": "form.moto.phone",
+            "type": "text",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "30",
+            "min": "0",
+            "max": null,
+            "options": []
+        },
+        {
+            "id": 31,
+            "name": "showNumber",
+            "label": "form.moto.showNumber",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "31",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 78,
+                    "form_configuration_id": 31,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                },
+                {
+                    "id": 79,
+                    "form_configuration_id": 31,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "name": "showSpotInCountries",
+            "label": "form.moto.showSpotInCountries",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "32",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 80,
+                    "form_configuration_id": 32,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                },
+                {
+                    "id": 81,
+                    "form_configuration_id": 32,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 0
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "name": "showDealersBid",
+            "label": "form.moto.showDealersBid",
+            "type": "radio",
+            "default": null,
+            "value": "",
+            "required": 0,
+            "class": "col-4",
+            "showOnValue": null,
+            "group": 4,
+            "score": 1,
+            "description": null,
+            "info": null,
+            "spot_type": "moto",
+            "ordern": "33",
+            "min": "0",
+            "max": null,
+            "options": [
+                {
+                    "id": 82,
+                    "form_configuration_id": 33,
+                    "name": "Si",
+                    "value": "Si",
+                    "checked": 0
+                },
+                {
+                    "id": 83,
+                    "form_configuration_id": 33,
+                    "name": "No",
+                    "value": "No",
+                    "checked": 0
+                }
+            ]
+        }
+    ]
+]

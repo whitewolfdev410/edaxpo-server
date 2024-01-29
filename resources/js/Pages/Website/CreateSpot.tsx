@@ -3,6 +3,7 @@ import InputRadio from "@b/components/inputs/InputRadio";
 import InputText from "@b/components/inputs/InputText";
 import { apiClient } from "@b/services/http/client";
 import { Flex, Form, Select, Skeleton } from "antd";
+import { randomUUID } from "crypto";
 import { Formik } from "formik";
 import React, { useEffect } from 'react';
 
@@ -70,26 +71,14 @@ function CreateMoto() {
 
         <Formik initialValues={{}} onSubmit={onSubmit}>
             <Form>
-                <Flex wrap="wrap" gap="small">
+                <Flex wrap="wrap" gap="small"  key={'contentf'}>
                     {config[2].map((el: FormConfiguration) => {
 
                         switch (el.type) {
                             case 'text':
                                 return (
                                     <div style={{ ...baseStyle }}>
-                                        <Field name="{el.name}" defaultValue={el.default} label={el.label} component={InputText} />
-                                    </div>
-                                )
-                            case 'select':
-                                return (
-                                    <div style={{ ...baseStyle }}>
-                                        <Field name="{el.name}" className={'w-[120px]'} label={el.label} options={el.options} component={Select} />
-                                    </div>
-                                )
-                            case 'radio':
-                                return (
-                                    <div style={{ ...baseStyle }}>
-                                        <Field name="{el.name}" label={el.label} options={el.options} component={InputRadio} />
+                                        <Field name="{el.name}" key={el.name} defaultValue={el.default} label={el.label} component={InputText} />
                                     </div>
                                 )
 

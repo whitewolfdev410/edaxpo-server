@@ -17,6 +17,7 @@ const _renderOption = (items: any) =>
 function Select(props: any) {
   const {
     value,
+    name,
     valueKey = '@id',
     onChange,
     children,
@@ -40,6 +41,7 @@ function Select(props: any) {
 
   return (
     <ASelect
+      key={name}
       allowClear={allowClear}
       mode={mode}
       disabled={disabled}
