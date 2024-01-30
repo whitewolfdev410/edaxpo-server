@@ -5,7 +5,6 @@ export const antdTheme = {
         borderRadius: 10,
         colorBorder: '#CED4DA',
         colorText: '#666666',
-
         Input:{
             borderRadius: 8,
         },

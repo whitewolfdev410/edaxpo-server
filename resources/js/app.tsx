@@ -38,7 +38,10 @@ if (!element) {
             root.render(
                 <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme}>
                     <StyleProvider hashPriority="high">
-                        <IntlProvider locale={currentLocale.locale} messages={currentLocale.messages}>
+                        <IntlProvider
+                            locale={currentLocale.locale}
+                            messages={currentLocale.messages as any}
+                        >
                             <App {...props} />
                             <Inspector
                                 disableLaunchEditor={true}
@@ -68,7 +71,10 @@ if (!element) {
             root.render(
                 <ConfigProvider locale={currentLocale.localeAntd} theme={antdTheme2}>
                     <StyleProvider hashPriority="high">
-                        <IntlProvider locale={currentLocale.locale} messages={currentLocale.messages}>
+                        <IntlProvider
+                            locale={currentLocale.locale}
+                            messages={currentLocale.messages as any}
+                        >
                             <ConfigContextProvider config={adminUi(null)}>
                                 <ModalsContextProvider>
                                     <App {...props} />

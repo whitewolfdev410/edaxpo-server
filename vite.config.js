@@ -7,7 +7,10 @@ import {inspectorServer} from "@react-dev-inspector/vite-plugin";
 export default defineConfig({
     plugins: [
         laravel({
-            input: 'resources/js/app.tsx',
+            input: [
+                'resources/js/app.tsx',
+                'resources/js/site.ts',
+            ],
             refresh: true,
         }),
         react(),

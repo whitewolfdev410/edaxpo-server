@@ -29,8 +29,7 @@ Route::get('/', function () {
 });
 
 Route::get('home', function () {
-    // return view('home');
-    return Inertia::render('Website/Form');
+    return view('home');
 });
 
 Route::middleware('auth')->get('/form', function () {

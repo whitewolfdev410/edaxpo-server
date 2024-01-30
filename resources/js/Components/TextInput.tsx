@@ -1,10 +1,13 @@
-import { forwardRef, useEffect, useImperativeHandle, useRef, InputHTMLAttributes } from 'react';
+import {forwardRef, useEffect, useImperativeHandle, useRef, ComponentProps} from 'react';
+import {Input, InputRef} from "antd";
+
+type InputProps =  ComponentProps<typeof Input>
 
 export default forwardRef(function TextInput(
-    { type = 'text', className = '', isFocused = false, ...props }: InputHTMLAttributes<HTMLInputElement> & { isFocused?: boolean },
+    { type = 'text', className = '', isFocused = false, ...props }: InputProps & { isFocused?: boolean },
     ref
 ) {
-    const localRef = useRef<HTMLInputElement>(null);
+    const localRef = useRef<InputRef>(null);
 
     useImperativeHandle(ref, () => ({
         focus: () => localRef.current?.focus(),
@@ -17,11 +20,10 @@ export default forwardRef(function TextInput(
     }, []);
 
     return (
-        <input
+        <Input
             {...props}
             type={type}
             className={
-                'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm ' +
                 className
             }
             ref={localRef}

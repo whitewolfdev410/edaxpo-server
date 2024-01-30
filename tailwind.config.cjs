@@ -1,5 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const forms = require('@tailwindcss/forms');
+// const forms = require('@tailwindcss/forms');
 
 
 /** @type {import('tailwindcss').Config} */
@@ -20,5 +20,5 @@ module.exports = {
         },
     },
 
-    plugins: [forms],
+    plugins: [],
 };
