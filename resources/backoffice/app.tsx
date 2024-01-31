@@ -3,6 +3,11 @@ import BackofficeLayout from "@b/components/layout/BackofficeLayout";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import UsersPage from "@b/pages/users/UsersPage";
 import SpotsPage from "@b/pages/spots/SpotsPage";
+import ComponentsPage from "@b/pages/components/ComponentsPage";
+import BrandsPage from "@b/pages/brands/BrandsPage";
+import ModelsPage from "@b/pages/models/ModelsPage";
+
+
 
 const router = createBrowserRouter([
     {
@@ -27,9 +32,21 @@ const router = createBrowserRouter([
                 element: <UsersPage />,
             },
             {
+                path: "/admin/components",
+                element: <ComponentsPage />,
+            },
+            {
+                path: "/admin/brands",
+                element: <BrandsPage />
+            },
+            {
+                path: "/admin/models",
+                element: <ModelsPage />
+            },
+            {
                 path: "*",
                 element: <div>404</div>,
-            }
+            },
         ]
     },
 ]);

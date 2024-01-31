@@ -1,15 +1,17 @@
 import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
-import {Avatar, Button} from "antd";
+import {Avatar} from "antd";
 import {renderDate} from "@b/components/table/renders";
 import {VerifiedEmailIcon} from "@b/config/icons";
 import Switch from "@b/components/inputs/Switch";
-import {Field} from "@b/components/form/Field";
+import {SecondaryButton} from "@b/components/buttons/Button";
+import {Title} from "@b/components/layout/Title";
 
 const SearchComponent = (props: any) => {
   return (
-    <div className="m-4 text-right">
-        <Button type="primary" onClick={() => props.onNewClick(0)}>+ Aggiungi utente</Button>
+    <div className="mb-4 flex flex-row justify-between">
+        <Title>Utenti</Title>
+        <SecondaryButton onClick={() => props.onNewClick(0)}>+ Aggiungi utente</SecondaryButton>
     </div>
   )
 }
@@ -26,7 +28,7 @@ export default function UsersPage() {
           searchComponent={SearchComponent}
           tableColumns={[
               {
-                  title: 'Id',
+                  title: 'ID',
                   dataIndex: 'id',
                   width: 50,
               },
@@ -47,11 +49,6 @@ export default function UsersPage() {
                           </div>
                       )
                   },
-              },
-              {
-                  title: 'Email',
-                  dataIndex: 'email',
-                  className: 'text-black'
               },
               {
                   title: 'Ruolo',

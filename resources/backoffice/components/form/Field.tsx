@@ -8,6 +8,7 @@ type FieldProps = {
     options?: any[];
     component?: ComponentType<any>;
     items?: any[];
+    obb?: boolean;
 }
 
 export const Field = ({name, label, component, ...rest}: FieldProps) => {

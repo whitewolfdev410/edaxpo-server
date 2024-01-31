@@ -3,11 +3,14 @@ import React from "react";
 import {Avatar, Button} from "antd";
 import {renderDate} from "@b/components/table/renders";
 import {VerifiedEmailIcon} from "@b/config/icons";
+import {Title} from "@b/components/layout/Title";
+import {SecondaryButton} from "@b/components/buttons/Button";
 
 const SearchComponent = (props: any) => {
   return (
-    <div className="mb-2 text-right">
-        <Button type="primary" onClick={() => props.onNewClick(0)}>Nuovo</Button>
+    <div className="mb-4 flex flex-row justify-between">
+        <Title>Annunci</Title>
+        <SecondaryButton onClick={() => props.onNewClick(0)}>Nuovo</SecondaryButton>
     </div>
   )
 }

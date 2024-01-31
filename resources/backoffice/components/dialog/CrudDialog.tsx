@@ -81,12 +81,10 @@ const CrudDialog = ({
               </div>
             </header>
           )}
-          <div className="p-4">
-            {children}
+          <div className="py-4 px-2">
+              {children}
+              <PageActionButtons />
           </div>
-            <div className="py-4">
-                <PageActionButtons />
-            </div>
         </div>
       </JDialog>
     </>

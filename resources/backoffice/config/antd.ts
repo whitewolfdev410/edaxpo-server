@@ -12,5 +12,8 @@ export const antdTheme = {
             colorText: '#999999',
             fontSize: 18,
         },
+        Button: {
+            primaryShadow: false,
+        }
     },
 }
