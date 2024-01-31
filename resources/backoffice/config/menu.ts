@@ -35,12 +35,12 @@ export const menuItems: MenuItem[] = [
     {
         "label": "Marche",
         "icon": "copy",
-        "url": "/components"
+        "url": "/brands"
     },
     {
         "label": "Modelli",
         "icon": "listCheck",
-        "url": "/components"
+        "url": "/models"
     },
     {
         "label": "Categorie",
