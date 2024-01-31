@@ -13,19 +13,9 @@ export const menuItems: MenuItem[] = [
         "url": "/dashboard"
     },
     {
-        "label": "Annunci",
-        "icon": "advertising",
-        "url": "/spots"
-    },
-    {
-        "label": "Segnalazioni",
-        "icon": "exclamation",
-        "url": "/components"
-    },
-    {
-        "label": "Richieste contatto",
-        "icon": "list",
-        "url": "/components"
+        "label": "Utenti",
+        "icon": "users",
+        "url": "/users"
     },
     {
         "label": "Componenti",
@@ -33,7 +23,12 @@ export const menuItems: MenuItem[] = [
         "url": "/components"
     },
     {
-        "label": "Marche",
+        "label": "Categorie",
+        "icon": "layerGroup",
+        "url": "/categories"
+    },
+    {
+        "label": "Marchi",
         "icon": "copy",
         "url": "/brands"
     },
@@ -43,14 +38,19 @@ export const menuItems: MenuItem[] = [
         "url": "/models"
     },
     {
-        "label": "Categorie",
-        "icon": "layerGroup",
-        "url": "/categories"
+        "label": "Annunci",
+        "icon": "advertising",
+        "url": "/spots"
     },
     {
-        "label": "Utenti",
-        "icon": "users",
-        "url": "/users"
+        "label": "Segnalazioni",
+        "icon": "exclamation",
+        "url": "/dashboard"
+    },
+    {
+        "label": "Richieste contatto",
+        "icon": "list",
+        "url": "/dashboard"
     },
     {
         "label": "Roles",
