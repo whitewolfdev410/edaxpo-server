@@ -32,35 +32,43 @@ export default function SpotsPage() {
                   className: 'text-center',
               },
               {
-                  title: '',
-                  dataIndex: 'cover',
-                  width: 80,
-                  className: 'text-center',
-                  render: (r: string) => <Avatar src={r} shape="square"   size={64} icon={<VerifiedEmailIcon />} />
-              },
-              {
                   title: 'titolo',
                   dataIndex: 'title',
                   width: 140,
               },
               {
-                  title: 'descrizione',
-                  dataIndex: 'desc',
+                  title: 'Ricambi',
+                  dataIndex: '',
               },
               {
-                  title: 'Created At',
+                  title: 'Tipo Utente',
+                  dataIndex: '',
+              },
+              {
+                  title: 'Data inserimento',
                   dataIndex: 'created_at',
-                  width: 150,
                   className: 'text-center',
                   render: renderDate
               },
               {
-                  title: 'Created At',
+                  title: 'Ultimo rinnovo',
                   dataIndex: 'updated_at',
-                  width: 150,
                   className: 'text-center',
                   render: renderDate
               },
+              {
+                  title: 'Link',
+                  dataIndex: '',
+                  width: 80,
+              },
+              {
+                  title: 'Attivo',
+                  dataIndex: '',
+                  width: 80,
+              },
+              {
+                  dataIndex: '_action',
+              }
           ]}
       />
   )
