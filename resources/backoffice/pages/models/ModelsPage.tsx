@@ -3,6 +3,7 @@ import React from "react";
 import Switch from "@b/components/inputs/Switch";
 import {SecondaryButton} from "@b/components/buttons/Button";
 import {Title} from "@b/components/layout/Title";
+import {Search} from "@b/components/search/Search";
 
 
 const SearchComponent = (props: any) => {
@@ -10,6 +11,7 @@ const SearchComponent = (props: any) => {
         <div className="mb-4 flex flex-row justify-between">
             <Title>Modelli</Title>
             <SecondaryButton onClick={() => props.onNewClick(0)}>+ Aggiungi prodotto</SecondaryButton>
+            <Search/>
         </div>
     )
 }
