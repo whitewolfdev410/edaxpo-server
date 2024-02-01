@@ -3,6 +3,7 @@ import React from "react";
 import {Field} from "@b/components/form/Field";
 import InputText from "@b/components/inputs/InputText";
 import AsyncSelect from "@b/components/inputs/AsyncSelect";
+import Upload from "@b/components/upload/Upload";
 
 const CategoryForm = (props: any) => {
     return (
@@ -17,12 +18,7 @@ const CategoryForm = (props: any) => {
                     <Field component={InputText} name="name" label={<span>Nome <strong className="text-black">FR</strong></span>}/>
                     <Field component={InputText} name="name" label={<span>Nome <strong className="text-black">ES</strong></span>}/>
                 </div>
-                <div className="text-[#707070]">
-                    <form action="/upload" method="post">
-                        <label className="font-bold">Foto:</label>
-                        <div><input type="file" id="imageUpload" name="image" accept="image/*"/></div>
-                    </form>
-                </div>
+                <div className="text-[#707070] font-bold">Foto:<div><Upload/></div></div>
             </div>
         </div>
     )

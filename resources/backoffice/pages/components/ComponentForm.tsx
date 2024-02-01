@@ -18,10 +18,7 @@ const ComponetForm = (props: any) => {
                     <Field component={InputText} name="name" label={<span>Nome <strong className="text-black">FR</strong></span>}/>
                     <Field component={InputText} name="name" label={<span>Nome <strong className="text-black">ES</strong></span>}/>
                 </div>
-                <div className="text-[#707070]">
-                    Foto:
-                    <Upload/>
-                </div>
+                <div className="text-[#707070] font-bold">Foto:<div><Upload/></div></div>
             </div>
         </div>
     )

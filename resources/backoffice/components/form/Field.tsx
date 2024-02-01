@@ -16,7 +16,7 @@ type FieldProps = {
 export const Field = ({name, label, localeId, component, obb, ...rest}: FieldProps) => {
     return (
         <div className="mb-4">
-            <div className="font-semibold">
+            <div className="font-semibold text-[#707070]">
                 {label}
                 {localeId && <FormattedMessage id={localeId} />}
                 {obb && <span className={'text-red-600'}> *</span>}
