@@ -3,6 +3,7 @@ import React from "react";
 import {Field} from "@b/components/form/Field";
 import InputText from "@b/components/inputs/InputText";
 import Switch from "@b/components/inputs/Switch";
+import Upload from "@b/components/upload/Upload";
 
 const ComponetForm = (props: any) => {
     return (
@@ -18,10 +19,8 @@ const ComponetForm = (props: any) => {
                     <Field component={InputText} name="name" label={<span>Nome <strong className="text-black">ES</strong></span>}/>
                 </div>
                 <div className="text-[#707070]">
-                    <form action="/upload" method="post">
-                        <label className="font-bold">Foto:</label>
-                        <div><input type="file" id="imageUpload" name="image" accept="image/*"/></div>
-                    </form>
+                    Foto:
+                    <Upload/>
                 </div>
             </div>
         </div>
