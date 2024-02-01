@@ -6,6 +6,7 @@ import SpotsPage from "@b/pages/spots/SpotsPage";
 import ComponentsPage from "@b/pages/components/ComponentsPage";
 import BrandsPage from "@b/pages/brands/BrandsPage";
 import ModelsPage from "@b/pages/models/ModelsPage";
+import CategoriesPage from "@b/pages/categories/CategoriesPage";
 
 
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: "/admin/models",
                 element: <ModelsPage />
+            },
+            {
+                path: "/admin/categories",
+                element: <CategoriesPage />
             },
             {
                 path: "*",
