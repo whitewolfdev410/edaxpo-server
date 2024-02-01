@@ -11,9 +11,10 @@ type FieldProps = {
     component?: ComponentType<any>;
     items?: any[];
     obb?: boolean;
+    placeholder?: string;
 }
 
-export const Field = ({name, label, localeId, component, obb, ...rest}: FieldProps) => {
+export const Field = ({name, label, localeId, component, obb, placeholder, ...rest}: FieldProps) => {
     return (
         <div className="mb-4">
             <div className="font-semibold text-[#707070]">

@@ -1,17 +1,24 @@
 import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
-import {Avatar, Button} from "antd";
 import {renderDate} from "@b/components/table/renders";
-import {VerifiedEmailIcon} from "@b/config/icons";
-import {Title} from "@b/components/layout/Title";
-import {SecondaryButton} from "@b/components/buttons/Button";
+import {Title, TitleMd} from "@b/components/layout/Title";
+import {Field} from "@b/components/form/Field";
+import {Button, TransparentButton} from "@b/components/buttons/Button";
+import InputText from "@b/components/inputs/InputText";
+
 
 const SearchComponent = (props: any) => {
+    const {onSubmitClick} = props
   return (
-    <div className="mb-4 flex flex-row justify-between">
-        <Title>Annunci</Title>
-        <SecondaryButton onClick={() => props.onNewClick(0)}>Nuovo</SecondaryButton>
-    </div>
+      <div>
+          <Title>Annunci</Title>
+          <div className="flex flex-row gap-2 ">
+              <Field name='fullName' component={InputText} placeholder='cerca...'/>
+              <Button onClick={onSubmitClick}>Cerca</Button>
+              <TransparentButton onClick={onSubmitClick}>Svuota</TransparentButton>
+          </div>
+      </div>
+
   )
 }
 
