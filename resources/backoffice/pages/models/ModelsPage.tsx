@@ -11,7 +11,6 @@ const SearchComponent = (props: any) => {
         <div className="mb-4 flex flex-row justify-between">
             <Title>Modelli</Title>
             <SecondaryButton onClick={() => props.onNewClick(0)}>+ Aggiungi prodotto</SecondaryButton>
-            <Search/>
         </div>
     )
 }
