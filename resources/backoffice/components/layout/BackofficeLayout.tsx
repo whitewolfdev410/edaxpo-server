@@ -24,16 +24,18 @@ const BackofficeLayout =  ({children}: any) => {
             <Head title="Dashboard" />
             <Sider
                 theme="light"
+                width="220"
                 style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0}}
             >
                 <div className="flex justify-center h-[65px] m-4 px-2" >
                     <img src="/assets/img/loader.svg" alt='logo'></img>
                 </div>
                 <Menu
+                    mode="inline"
                     items={items}
                 />
             </Sider>
-            <Layout className="h-screen" style={{ marginLeft: 200 }}>
+            <Layout className="h-screen" style={{ marginLeft: 220 }}>
                 <Content className="p-4 mt-2" style={{  overflow: 'initial' }}>
                     <Outlet />
                 </Content>
