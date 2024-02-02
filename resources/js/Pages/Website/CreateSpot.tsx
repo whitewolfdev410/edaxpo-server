@@ -80,31 +80,31 @@ const PartialForm = ({config}: any)  => {
                     case 'text':
                         return (
                             <div style={{ ...baseStyle }}>
-                                <Field name={el.name} label={el.label} component={InputText} />
+                                <Field name={el.name} localeId={el.label} component={InputText} />
                             </div>
                         )
                     case 'select':
                         return (
                             <div style={{ ...baseStyle }}>
-                                <Field name={el.name} className={'w-[120px]'} label={el.label} items={el.options} component={InputSelect} />
+                                <Field name={el.name} className={'w-[120px]'} localeId={el.label} items={el.options} component={InputSelect} />
                             </div>
                         )
                     case 'radio':
                         return (
                             <div style={{ ...baseStyle }}>
-                                <Field name={el.name} label={el.label} options={el.options} component={InputRadio} />
+                                <Field name={el.name} localeId={el.label} options={el.options} component={InputRadio} />
                             </div>
                         )
                     case 'currency':
                         return (
                             <div style={{ ...baseStyle }}>
-                                <Field name={el.name} label={el.label} options={el.options} component={InputCurrency} />
+                                <Field name={el.name} localeId={el.label} options={el.options} component={InputCurrency} />
                             </div>
                         )
                     case 'image':
                         return (
                             <div style={{ ...baseStyle }}>
-                                <Field name={el.name} label={el.label} options={el.options} component={InputUpload} />
+                                <Field name={el.name} localeId={el.label} options={el.options} component={InputUpload} />
                             </div>
                         )
                 }
