@@ -32,12 +32,12 @@ export default function SpotsPage() {
                   className: 'text-center',
               },
               {
-                  title: 'titolo',
+                  title: 'Titolo',
                   dataIndex: 'title',
                   width: 140,
               },
               {
-                  title: 'Ricambi',
+                  title: 'Ricambio',
                   dataIndex: '',
               },
               {

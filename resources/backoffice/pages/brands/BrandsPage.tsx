@@ -33,9 +33,15 @@ export default function BrandsPage() {
                         className: 'text-center',
                     },
                     {
+                        title: '',
+                        dataIndex: '',
+                        render: () => <img src="" alt=""/>,
+                        width: 200,
+
+                    },
+                    {
                         title: 'Nome',
                         dataIndex: '',
-                        width: 140,
                     },
                     {
                         title: 'Stato',

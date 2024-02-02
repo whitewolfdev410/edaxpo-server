@@ -51,6 +51,10 @@ export default function UsersPage() {
                   },
               },
               {
+                  title: 'Lingua',
+                  dataIndex: '',
+              },
+              {
                   title: 'Ruolo',
                   dataIndex: 'role',
               },
