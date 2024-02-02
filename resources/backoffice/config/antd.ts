@@ -11,6 +11,7 @@ export const antdTheme = {
         Menu: {
             colorText: '#999999',
             fontSize: 18,
+            itemHoverColor: '#4b7cf3',
         },
         Button: {
             primaryShadow: false,
