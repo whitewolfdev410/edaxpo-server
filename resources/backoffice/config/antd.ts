@@ -14,6 +14,7 @@ export const antdTheme = {
             fontSize: 18,
             itemHoverColor: '#4b7cf3',
             itemHeight:45,
+            activeBarBorderWidth: 0,
         },
         Button: {
             primaryShadow: false,

@@ -22,20 +22,31 @@ const BackofficeLayout =  ({children}: any) => {
     return (
         <Layout hasSider>
             <Head title="Dashboard" />
-            <Sider
-                theme="light"
-                width="220"
-                style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0}}
-            >
-                <div className="flex justify-center h-[65px] m-4 px-2" >
-                    <img src="/assets/img/loader.svg" alt='logo'></img>
-                </div>
-                <Menu
-                    mode="inline"
-                    items={items}
-                />
-            </Sider>
-            <Layout className="h-screen" style={{ marginLeft: 220 }}>
+                <Sider
+                    trigger={null}
+                    collapsible
+                    theme="light"
+                    width="220"
+                    className="shadow-2xl"
+                    style={{
+                        overflowY: 'auto',
+                        overflowX: 'visible',
+                        height: '100vh',
+                        position: 'fixed',
+                        left: 0,
+                        top: 0,
+                        bottom: 0
+                    }}
+                >
+                    <div className="flex justify-center h-[65px] m-4 px-2" >
+                        <img src="/assets/img/loader.svg" alt='logo'></img>
+                    </div>
+                    <Menu
+                        mode="inline"
+                        items={items}
+                    />
+                </Sider>
+            <Layout className="h-full" style={{ marginLeft: 220 }}>
                 <Content className="p-4 mt-4" style={{  overflow: 'initial' }}>
                     <Outlet />
                 </Content>
