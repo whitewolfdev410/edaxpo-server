@@ -42,33 +42,36 @@
                 {
                     "id": 1,
                     "form_configuration_id": 2,
-                    "name": "Nuovo",
+                    "label": "form.moto.new",
                     "value": "Nuovo",
                     "checked": 0
                 },
                 {
                     "id": 2,
                     "form_configuration_id": 2,
-                    "name": "Usato",
+                    "label": "form.moto.used",
                     "value": "Usato",
                     "checked": 1
                 },
                 {
                     "id": 3,
                     "form_configuration_id": 2,
-                    "name": "Km_zero",
+                    "label": "form.moto.km",
                     "value": "Km zero",
                     "checked": 0
                 },
                 {
                     "id": 4,
                     "form_configuration_id": 2,
-                    "name": "Test_drive",
+                    "label": "form.moto.test",
                     "value": "Test drive",
                     "checked": 0
                 }
             ]
-        },
+        }
+
+    ],
+    [
         {
             "id": 3,
             "name": "image",
@@ -111,21 +114,19 @@
                 {
                     "id": 5,
                     "form_configuration_id": 4,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 1
                 },
                 {
                     "id": 6,
                     "form_configuration_id": 4,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 }
             ]
-        }
-    ],
-    [
+        },
         {
             "id": 5,
             "name": "price",
@@ -168,14 +169,14 @@
                 {
                     "id": 7,
                     "form_configuration_id": 6,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 1
                 },
                 {
                     "id": 8,
                     "form_configuration_id": 6,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 }
@@ -265,14 +266,14 @@
                 {
                     "id": 9,
                     "form_configuration_id": 12,
-                    "label": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 1
                 },
                 {
                     "id": 10,
                     "form_configuration_id": 12,
-                    "label": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 }
@@ -300,49 +301,49 @@
                 {
                     "id": 11,
                     "form_configuration_id": 13,
-                    "name": "Zero emissioni",
+                    "label": "Zero emissioni",
                     "value": "Zero emissioni",
                     "checked": 0
                 },
                 {
                     "id": 12,
                     "form_configuration_id": 13,
-                    "name": "Euro_0",
+                    "label": "Euro 0",
                     "value": "Euro 0",
                     "checked": 0
                 },
                 {
                     "id": 13,
                     "form_configuration_id": 13,
-                    "name": "Euro_1",
+                    "label": "Euro 1",
                     "value": "Euro 1",
                     "checked": 0
                 },
                 {
                     "id": 14,
                     "form_configuration_id": 13,
-                    "name": "Euro_2",
+                    "label": "Euro 2",
                     "value": "Euro 2",
                     "checked": 0
                 },
                 {
                     "id": 15,
                     "form_configuration_id": 13,
-                    "name": "Euro_3",
+                    "label": "Euro 3",
                     "value": "Euro 3",
                     "checked": 0
                 },
                 {
                     "id": 16,
                     "form_configuration_id": 13,
-                    "name": "Euro_4",
+                    "label": "Euro 4",
                     "value": "Euro 4",
                     "checked": 0
                 },
                 {
                     "id": 17,
                     "form_configuration_id": 13,
-                    "name": "Euro_5",
+                    "label": "Euro 5",
                     "value": "Euro 5",
                     "checked": 0
                 }
@@ -408,100 +409,100 @@
             "max": null,
             "options": [
                 {
-                    "id": 18,
-                    "form_configuration_id": 16,
-                    "name": "Arancione",
+                    "id": 32,
+                    "form_configuration_id": 17,
+                    "label": "global.color.orange",
                     "value": "#ff7500",
                     "checked": 0
                 },
                 {
-                    "id": 19,
-                    "form_configuration_id": 16,
-                    "name": "Argento",
+                    "id": 33,
+                    "form_configuration_id": 17,
+                    "label": "global.color.silver",
                     "value": "#dcdcdc",
                     "checked": 0
                 },
                 {
-                    "id": 20,
-                    "form_configuration_id": 16,
-                    "name": "Bianco",
+                    "id": 34,
+                    "form_configuration_id": 17,
+                    "label": "global.color.white",
                     "value": "#ffffff",
                     "checked": 0
                 },
                 {
-                    "id": 21,
-                    "form_configuration_id": 16,
-                    "name": "Blu_Azzurro",
+                    "id": 35,
+                    "form_configuration_id": 17,
+                    "label": "global.color.blu",
                     "value": "#0059b2",
                     "checked": 0
                 },
                 {
-                    "id": 22,
-                    "form_configuration_id": 16,
-                    "name": "Giallo",
+                    "id": 36,
+                    "form_configuration_id": 17,
+                    "label": "global.color.yellow",
                     "value": "#f7c81e",
                     "checked": 0
                 },
                 {
-                    "id": 23,
-                    "form_configuration_id": 16,
-                    "name": "Grigio",
+                    "id": 37,
+                    "form_configuration_id": 17,
+                    "label": "global.color.gray",
                     "value": "#949494",
                     "checked": 0
                 },
                 {
-                    "id": 24,
-                    "form_configuration_id": 16,
-                    "name": "Nero",
+                    "id": 38,
+                    "form_configuration_id": 17,
+                    "label": "global.color.black",
                     "value": "#000000",
                     "checked": 0
                 },
                 {
-                    "id": 25,
-                    "form_configuration_id": 16,
-                    "name": "Oro",
+                    "id": 39,
+                    "form_configuration_id": 17,
+                    "label": "global.color.gold",
                     "value": "#d9a600",
                     "checked": 0
                 },
                 {
-                    "id": 26,
-                    "form_configuration_id": 16,
-                    "name": "Rosso",
+                    "id": 40,
+                    "form_configuration_id": 17,
+                    "label": "global.color.red",
                     "value": "#d91a2a",
                     "checked": 0
                 },
                 {
-                    "id": 27,
-                    "form_configuration_id": 16,
-                    "name": "Verde",
+                    "id": 41,
+                    "form_configuration_id": 17,
+                    "label": "global.color.green",
                     "value": "#38a614",
                     "checked": 0
                 },
                 {
-                    "id": 28,
-                    "form_configuration_id": 16,
-                    "name": "Lilla",
+                    "id": 42,
+                    "form_configuration_id": 17,
+                    "label": "global.color.lilac",
                     "value": "#c8a2c8",
                     "checked": 0
                 },
                 {
-                    "id": 29,
-                    "form_configuration_id": 16,
-                    "name": "Bronzo",
+                    "id": 43,
+                    "form_configuration_id": 17,
+                    "label": "global.color.bronze",
                     "value": "#bf7326",
                     "checked": 0
                 },
                 {
-                    "id": 30,
-                    "form_configuration_id": 16,
-                    "name": "Marrone",
+                    "id": 44,
+                    "form_configuration_id": 17,
+                    "label": "global.color.brown",
                     "value": "#994200",
                     "checked": 0
                 },
                 {
-                    "id": 31,
-                    "form_configuration_id": 16,
-                    "name": "Rosa",
+                    "id": 45,
+                    "form_configuration_id": 17,
+                    "label": "global.color.pink",
                     "value": "#ff69b4",
                     "checked": 0
                 }
@@ -529,98 +530,98 @@
                 {
                     "id": 32,
                     "form_configuration_id": 17,
-                    "name": "Arancione",
+                    "label": "global.color.orange",
                     "value": "#ff7500",
                     "checked": 0
                 },
                 {
                     "id": 33,
                     "form_configuration_id": 17,
-                    "name": "Argento",
+                    "label": "global.color.silver",
                     "value": "#dcdcdc",
                     "checked": 0
                 },
                 {
                     "id": 34,
                     "form_configuration_id": 17,
-                    "name": "Bianco",
+                    "label": "global.color.white",
                     "value": "#ffffff",
                     "checked": 0
                 },
                 {
                     "id": 35,
                     "form_configuration_id": 17,
-                    "name": "Blu_Azzurro",
+                    "label": "global.color.blu",
                     "value": "#0059b2",
                     "checked": 0
                 },
                 {
                     "id": 36,
                     "form_configuration_id": 17,
-                    "name": "Giallo",
+                    "label": "global.color.yellow",
                     "value": "#f7c81e",
                     "checked": 0
                 },
                 {
                     "id": 37,
                     "form_configuration_id": 17,
-                    "name": "Grigio",
+                    "label": "global.color.gray",
                     "value": "#949494",
                     "checked": 0
                 },
                 {
                     "id": 38,
                     "form_configuration_id": 17,
-                    "name": "Nero",
+                    "label": "global.color.black",
                     "value": "#000000",
                     "checked": 0
                 },
                 {
                     "id": 39,
                     "form_configuration_id": 17,
-                    "name": "Oro",
+                    "label": "global.color.gold",
                     "value": "#d9a600",
                     "checked": 0
                 },
                 {
                     "id": 40,
                     "form_configuration_id": 17,
-                    "name": "Rosso",
+                    "label": "global.color.red",
                     "value": "#d91a2a",
                     "checked": 0
                 },
                 {
                     "id": 41,
                     "form_configuration_id": 17,
-                    "name": "Verde",
+                    "label": "global.color.green",
                     "value": "#38a614",
                     "checked": 0
                 },
                 {
                     "id": 42,
                     "form_configuration_id": 17,
-                    "name": "Lilla",
+                    "label": "global.color.lilac",
                     "value": "#c8a2c8",
                     "checked": 0
                 },
                 {
                     "id": 43,
                     "form_configuration_id": 17,
-                    "name": "Bronzo",
+                    "label": "global.color.bronze",
                     "value": "#bf7326",
                     "checked": 0
                 },
                 {
                     "id": 44,
                     "form_configuration_id": 17,
-                    "name": "Marrone",
+                    "label": "global.color.brown",
                     "value": "#994200",
                     "checked": 0
                 },
                 {
                     "id": 45,
                     "form_configuration_id": 17,
-                    "name": "Rosa",
+                    "label": "global.color.pink",
                     "value": "#ff69b4",
                     "checked": 0
                 }
@@ -648,14 +649,14 @@
                 {
                     "id": 46,
                     "form_configuration_id": 18,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 1
                 },
                 {
                     "id": 47,
                     "form_configuration_id": 18,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 }
@@ -683,70 +684,70 @@
                 {
                     "id": 48,
                     "form_configuration_id": 19,
-                    "name": "10",
+                    "label": "global.color.ten",
                     "value": "10%",
                     "checked": 0
                 },
                 {
                     "id": 49,
                     "form_configuration_id": 19,
-                    "name": "20",
+                    "label": "global.color.twenty",
                     "value": "20%",
                     "checked": 0
                 },
                 {
                     "id": 50,
                     "form_configuration_id": 19,
-                    "name": "30",
+                    "label": "global.color.thirty",
                     "value": "30%",
                     "checked": 0
                 },
                 {
                     "id": 51,
                     "form_configuration_id": 19,
-                    "name": "40",
+                    "label": "global.color.forty",
                     "value": "40%",
                     "checked": 0
                 },
                 {
                     "id": 52,
                     "form_configuration_id": 19,
-                    "name": "50",
+                    "label": "global.color.fifty",
                     "value": "50%",
                     "checked": 0
                 },
                 {
                     "id": 53,
                     "form_configuration_id": 19,
-                    "name": "60",
+                    "label": "global.color.sixty",
                     "value": "60%",
                     "checked": 0
                 },
                 {
                     "id": 54,
                     "form_configuration_id": 19,
-                    "name": "70",
+                    "label": "global.color.seventy",
                     "value": "70%",
                     "checked": 0
                 },
                 {
                     "id": 55,
                     "form_configuration_id": 19,
-                    "name": "80",
+                    "label": "global.color.eighty",
                     "value": "80%",
                     "checked": 0
                 },
                 {
                     "id": 56,
                     "form_configuration_id": 19,
-                    "name": "90",
+                    "label": "global.color.ninety",
                     "value": "90%",
                     "checked": 0
                 },
                 {
                     "id": 57,
                     "form_configuration_id": 19,
-                    "name": "100",
+                    "label": "global.color.one_hundred",
                     "value": "100%",
                     "checked": 0
                 }
@@ -774,70 +775,70 @@
                 {
                     "id": 58,
                     "form_configuration_id": 20,
-                    "name": "10",
+                    "label": "10",
                     "value": "10%",
                     "checked": 0
                 },
                 {
                     "id": 59,
                     "form_configuration_id": 20,
-                    "name": "20",
+                    "label": "20",
                     "value": "20%",
                     "checked": 0
                 },
                 {
                     "id": 60,
                     "form_configuration_id": 20,
-                    "name": "30",
+                    "label": "30",
                     "value": "30%",
                     "checked": 0
                 },
                 {
                     "id": 61,
                     "form_configuration_id": 20,
-                    "name": "40",
+                    "label": "40",
                     "value": "40%",
                     "checked": 0
                 },
                 {
                     "id": 62,
                     "form_configuration_id": 20,
-                    "name": "50",
+                    "label": "50",
                     "value": "50%",
                     "checked": 0
                 },
                 {
                     "id": 63,
                     "form_configuration_id": 20,
-                    "name": "60",
+                    "label": "60",
                     "value": "60%",
                     "checked": 0
                 },
                 {
                     "id": 64,
                     "form_configuration_id": 20,
-                    "name": "70",
+                    "label": "70",
                     "value": "70%",
                     "checked": 0
                 },
                 {
                     "id": 65,
                     "form_configuration_id": 20,
-                    "name": "80",
+                    "label": "80",
                     "value": "80%",
                     "checked": 0
                 },
                 {
                     "id": 66,
                     "form_configuration_id": 20,
-                    "name": "90",
+                    "label": "90",
                     "value": "90%",
                     "checked": 0
                 },
                 {
                     "id": 67,
                     "form_configuration_id": 20,
-                    "name": "100",
+                    "label": "100",
                     "value": "100%",
                     "checked": 0
                 }
@@ -865,28 +866,28 @@
                 {
                     "id": 68,
                     "form_configuration_id": 21,
-                    "name": "general_0",
+                    "label": "general_0",
                     "value": "90\/100 - Ottime",
                     "checked": 0
                 },
                 {
                     "id": 69,
                     "form_configuration_id": 21,
-                    "name": "general_1",
+                    "label": "general_1",
                     "value": "80\/89 - Buone",
                     "checked": 0
                 },
                 {
                     "id": 70,
                     "form_configuration_id": 21,
-                    "name": "general_2",
+                    "label": "general_2",
                     "value": "70\/79 - Discrete",
                     "checked": 0
                 },
                 {
                     "id": 71,
                     "form_configuration_id": 21,
-                    "name": "general_3",
+                    "label": "general_3",
                     "value": "60\/69 - Sufficenti",
                     "checked": 0
                 }
@@ -977,7 +978,7 @@
         {
             "id": 26,
             "name": "province",
-            "label": "Provincia",
+            "label": "form.moto.pr",
             "type": "select",
             "default": null,
             "value": "",
@@ -1018,35 +1019,35 @@
                 {
                     "id": 72,
                     "form_configuration_id": 27,
-                    "name": "Bonifico",
+                    "label": "global.payment.bonifico",
                     "value": "Bonifico",
                     "checked": 0
                 },
                 {
                     "id": 73,
                     "form_configuration_id": 27,
-                    "name": "Carta di credito",
+                    "label": "global.payment.card",
                     "value": "Carta di credito",
                     "checked": 0
                 },
                 {
                     "id": 74,
                     "form_configuration_id": 27,
-                    "name": "Contanti",
+                    "label": "global.payment.cash",
                     "value": "Contanti",
                     "checked": 0
                 },
                 {
                     "id": 75,
                     "form_configuration_id": 27,
-                    "name": "Contrassegno",
+                    "label": "global.payment.mark",
                     "value": "Contrassegno",
                     "checked": 0
                 },
                 {
                     "id": 76,
                     "form_configuration_id": 27,
-                    "name": "Paypal",
+                    "label": "global.payment.paypal",
                     "value": "Paypal",
                     "checked": 0
                 }
@@ -1094,7 +1095,7 @@
                 {
                     "id": 77,
                     "form_configuration_id": 29,
-                    "name": "+39",
+                    "label": "+39",
                     "value": "+39",
                     "checked": 0
                 }
@@ -1142,14 +1143,14 @@
                 {
                     "id": 78,
                     "form_configuration_id": 31,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 },
                 {
                     "id": 79,
                     "form_configuration_id": 31,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 0
                 }
@@ -1177,14 +1178,14 @@
                 {
                     "id": 80,
                     "form_configuration_id": 32,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 },
                 {
                     "id": 81,
                     "form_configuration_id": 32,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 0
                 }
@@ -1212,14 +1213,14 @@
                 {
                     "id": 82,
                     "form_configuration_id": 33,
-                    "name": "Si",
+                    "label": "global.si",
                     "value": "Si",
                     "checked": 0
                 },
                 {
                     "id": 83,
                     "form_configuration_id": 33,
-                    "name": "No",
+                    "label": "global.no",
                     "value": "No",
                     "checked": 0
                 }
