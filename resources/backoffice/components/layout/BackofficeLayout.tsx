@@ -36,7 +36,7 @@ const BackofficeLayout =  ({children}: any) => {
                 />
             </Sider>
             <Layout className="h-screen" style={{ marginLeft: 220 }}>
-                <Content className="p-4 mt-2" style={{  overflow: 'initial' }}>
+                <Content className="p-4 mt-4" style={{  overflow: 'initial' }}>
                     <Outlet />
                 </Content>
             </Layout>

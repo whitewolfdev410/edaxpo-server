@@ -8,9 +8,9 @@ export const Search =  (props: any) => {
 
     return (
         <div className="flex flex-row gap-2 ">
-            <Field name='fullName' component={InputText}/>
-            <Button onClick={onSubmitClick}>Cerca</Button>
-            <TransparentButton onClick={onSubmitClick}>Svuota</TransparentButton>
+          <Field name='fullName' component={InputText}/>
+          <Button onClick={onSubmitClick}>Cerca</Button>
+          <TransparentButton onClick={onSubmitClick}>Svuota</TransparentButton>
         </div>
     );
 }

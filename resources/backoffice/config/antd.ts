@@ -5,6 +5,7 @@ export const antdTheme = {
         borderRadius: 10,
         colorBorder: '#CED4DA',
         colorText: '#666666',
+        colorBgLayout: '#FFFFFF',
         Input:{
             borderRadius: 8,
         },
@@ -12,9 +13,13 @@ export const antdTheme = {
             colorText: '#999999',
             fontSize: 18,
             itemHoverColor: '#4b7cf3',
+            itemHeight:45,
         },
         Button: {
             primaryShadow: false,
+        },
+        Layout: {
+            siderBg: '#f0f2f5',
         }
     },
 }
