@@ -2,15 +2,12 @@ import { Field } from "@b/components/form/Field";
 import InputRadio from "@b/components/inputs/InputRadio";
 import InputText from "@b/components/inputs/InputText";
 import { apiClient } from "@b/services/http/client";
-import {Button, Flex, Form, Row, Skeleton, Tabs, TabsProps} from "antd";
-import { randomUUID } from "crypto";
-import { Formik } from "formik";
+import {Button, Flex, Row, Skeleton, Tabs, TabsProps} from "antd";
+import { Formik, Form } from "formik";
 import React, { useEffect } from 'react';
-import {MotoIcon} from "@/Components/Icons/MotoIcon";
 import { FormattedMessage } from "react-intl";
 import InputCurrency from "@b/components/inputs/InputCurrency";
 import InputUpload from "@b/components/inputs/InputUpload";
-import Select from "@b/components/inputs/Select";
 import InputSelect from "@b/components/inputs/InputSelect";
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 
@@ -129,7 +126,7 @@ function CreateMoto() {
     }, [])
 
     const onSubmit = (values: any) => {
-        debugger
+        console.log("asdasd")
         apiClient.post("/api/form/moto", values).then((response) => {
             alert("ok")
         }).catch((error) => {
@@ -171,7 +168,6 @@ function CreateMoto() {
     ];
 
     return (
-
         <Formik initialValues={{}} onSubmit={onSubmit}>
             <Form>
                 <Tabs
