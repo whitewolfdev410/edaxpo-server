@@ -33,13 +33,18 @@ Route::get('home', function () {
     return view('home');
 });
 
+Route::get('/search', function () {
+    return Inertia::render('Website/SearchPage');
+})->name('search-page');
+
+
 Route::middleware('auth')->get('/form', function () {
     return Inertia::render('Website/CreateSpot');
 })->name('create-spot');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->name('form');
+})->name('dashboard');
 
 
 Route::middleware('auth')->group(function () {
