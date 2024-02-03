@@ -18,15 +18,6 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return redirect('/home');
-    //return view('login');
-    /*
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-    */
 });
 
 Route::get('home', function () {
@@ -34,9 +25,8 @@ Route::get('home', function () {
 });
 
 Route::get('/search', function () {
-    return Inertia::render('Website/SearchPage');
+    return Inertia::render('Search/SearchPage');
 })->name('search-page');
-
 
 Route::middleware('auth')->get('/form', function () {
     return Inertia::render('Website/CreateSpot');
