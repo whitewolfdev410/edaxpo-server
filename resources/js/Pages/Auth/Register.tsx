@@ -5,19 +5,9 @@ import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import TextInput from '@/Components/TextInput';
 import { Head, Link, useForm } from '@inertiajs/react';
+import {ProgressBar} from "@/Components/ProgressBar";
 
-const ProgressBar = ({ progress }: { progress: number }) => {
-    return (
-        <div className="relative pt-1">
-            <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
-                <div
-                    style={{ width: `${progress}%`, transition: 'width 0.5s ease-in-out' }}
-                    className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"
-                ></div>
-            </div>
-        </div>
-    );
-}
+
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({

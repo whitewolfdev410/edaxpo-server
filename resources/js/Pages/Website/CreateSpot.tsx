@@ -3,7 +3,7 @@ import InputRadio from "@b/components/inputs/InputRadio";
 import InputText from "@b/components/inputs/InputText";
 import { apiClient } from "@b/services/http/client";
 import {Button, Flex, Row, Skeleton, Tabs, TabsProps} from "antd";
-import { Formik, Form } from "formik";
+import {Formik, Form, useFormikContext} from "formik";
 import React, { useEffect } from 'react';
 import {MotoIcon} from "@/Components/Icons/MotoIcon";
 import { FormattedMessage } from "react-intl";
@@ -12,6 +12,7 @@ import InputUpload from "@b/components/inputs/InputUpload";
 import Select from "@b/components/inputs/Select";
 import InputSelect from "@b/components/inputs/InputSelect";
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import {ProgressBar} from "@/Components/ProgressBar";
 
 
 export interface FormConfiguration {
@@ -74,6 +75,16 @@ const PartialFormContainer = ({config, prev, next, currentTab, setCurrentTab}: a
     )
 }
 
+const FormProgressBar = ({progress}: any) => {
+    const form = useFormikContext();
+    return  <ProgressBar progress={calculateProgress(form.values, 10)} />
+}
+
+const DebugForm = ({progress}: any) => {
+    const form = useFormikContext();
+    return  <pre>{JSON.stringify(form, null,2)}</pre>
+}
+
 const PartialForm = ({config}: any)  => {
 
     return (
@@ -117,12 +128,17 @@ const PartialForm = ({config}: any)  => {
     )
 }
 
+function calculateProgress(data: any, requiredFields: number) {
+    const keys = Object.keys(data)
+    const countNotEmpty = keys.filter((key) => data[key] !== "").length
+    return (countNotEmpty / requiredFields) * 100
+}
+
 function CreateMoto() {
 
     const [config, setConfig] = React.useState<any>(null);
     const [currentTab, setCurrentTab] = React.useState(0);
     const [progress, setProgress] = React.useState(0);
-    const { data, setData } = useForm(config);
 
 
     useEffect(() => {
@@ -140,11 +156,6 @@ function CreateMoto() {
         })
     }
 
-    useEffect(() => {
-        let progress = 0
-        debugger
-        setProgress(25)
-    }, [data]);
 
     if (config === null) return (
         <Skeleton active />
@@ -180,24 +191,21 @@ function CreateMoto() {
     ];
 
     return (
-
         <Formik initialValues={{}} onSubmit={onSubmit}>
-            {({values}) => (
             <Form>
+                <FormProgressBar />
                 <Tabs
                     activeKey={currentTab.toString()}
                     items={items}
-                    onChange={onChange}
+                    onChange={(key) => setCurrentTab(parseInt(key)) }
                 />
                 <Row className="flex flex-row justify-start gap-2 mt-2">
                     <Button key={'submit'} type="primary"  htmlType="submit"><FormattedMessage id='global.save' /></Button>
                     setProgress : {progress}
                 </Row>
-                <pre>{JSON.stringify({values},null,2)}</pre>
+                <DebugForm />
             </Form>
-            )}
         </Formik>
-
     );
 
 }
