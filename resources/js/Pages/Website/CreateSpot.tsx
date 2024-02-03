@@ -5,11 +5,14 @@ import { apiClient } from "@b/services/http/client";
 import {Button, Flex, Row, Skeleton, Tabs, TabsProps} from "antd";
 import { Formik, Form } from "formik";
 import React, { useEffect } from 'react';
+import {MotoIcon} from "@/Components/Icons/MotoIcon";
 import { FormattedMessage } from "react-intl";
 import InputCurrency from "@b/components/inputs/InputCurrency";
 import InputUpload from "@b/components/inputs/InputUpload";
+import Select from "@b/components/inputs/Select";
 import InputSelect from "@b/components/inputs/InputSelect";
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+
 
 export interface FormConfiguration {
     id: number
@@ -118,6 +121,9 @@ function CreateMoto() {
 
     const [config, setConfig] = React.useState<any>(null);
     const [currentTab, setCurrentTab] = React.useState(0);
+    const [progress, setProgress] = React.useState(0);
+    const { data, setData } = useForm(config);
+
 
     useEffect(() => {
         apiClient.get("/api/form/moto").then((response) => {
@@ -126,13 +132,19 @@ function CreateMoto() {
     }, [])
 
     const onSubmit = (values: any) => {
-        console.log("asdasd")
+        console.log(values)
         apiClient.post("/api/form/moto", values).then((response) => {
             alert("ok")
         }).catch((error) => {
             alert("error")
         })
     }
+
+    useEffect(() => {
+        let progress = 0
+        debugger
+        setProgress(25)
+    }, [data]);
 
     if (config === null) return (
         <Skeleton active />
@@ -168,7 +180,9 @@ function CreateMoto() {
     ];
 
     return (
+
         <Formik initialValues={{}} onSubmit={onSubmit}>
+            {({values}) => (
             <Form>
                 <Tabs
                     activeKey={currentTab.toString()}
@@ -177,8 +191,11 @@ function CreateMoto() {
                 />
                 <Row className="flex flex-row justify-start gap-2 mt-2">
                     <Button key={'submit'} type="primary"  htmlType="submit"><FormattedMessage id='global.save' /></Button>
+                    setProgress : {progress}
                 </Row>
+                <pre>{JSON.stringify({values},null,2)}</pre>
             </Form>
+            )}
         </Formik>
 
     );
