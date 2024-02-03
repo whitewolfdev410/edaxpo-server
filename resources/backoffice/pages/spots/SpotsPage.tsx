@@ -1,17 +1,17 @@
 import {Crud} from "@logicpanel/admin-ui";
 import React from "react";
-import {Avatar, Button} from "antd";
 import {renderDate} from "@b/components/table/renders";
-import {VerifiedEmailIcon} from "@b/config/icons";
 import {Title} from "@b/components/layout/Title";
-import {SecondaryButton} from "@b/components/buttons/Button";
+import {Search} from "@b/components/search/Search";
 
 const SearchComponent = (props: any) => {
+
   return (
-    <div className="mb-4 flex flex-row justify-between">
-        <Title>Annunci</Title>
-        <SecondaryButton onClick={() => props.onNewClick(0)}>Nuovo</SecondaryButton>
-    </div>
+      <div className="flex flex-row justify-between">
+          <Title>Annunci</Title>
+          <Search/>
+      </div>
+
   )
 }
 
@@ -32,35 +32,43 @@ export default function SpotsPage() {
                   className: 'text-center',
               },
               {
-                  title: '',
-                  dataIndex: 'cover',
-                  width: 80,
-                  className: 'text-center',
-                  render: (r: string) => <Avatar src={r} shape="square"   size={64} icon={<VerifiedEmailIcon />} />
-              },
-              {
-                  title: 'titolo',
+                  title: 'Titolo',
                   dataIndex: 'title',
                   width: 140,
               },
               {
-                  title: 'descrizione',
-                  dataIndex: 'desc',
+                  title: 'Ricambio',
+                  dataIndex: '',
               },
               {
-                  title: 'Created At',
+                  title: 'Tipo Utente',
+                  dataIndex: '',
+              },
+              {
+                  title: 'Data inserimento',
                   dataIndex: 'created_at',
-                  width: 150,
                   className: 'text-center',
                   render: renderDate
               },
               {
-                  title: 'Created At',
+                  title: 'Ultimo rinnovo',
                   dataIndex: 'updated_at',
-                  width: 150,
                   className: 'text-center',
                   render: renderDate
               },
+              {
+                  title: 'Link',
+                  dataIndex: '',
+                  width: 80,
+              },
+              {
+                  title: 'Attivo',
+                  dataIndex: '',
+                  width: 80,
+              },
+              {
+                  dataIndex: '_action',
+              }
           ]}
       />
   )

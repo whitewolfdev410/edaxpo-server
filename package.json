@@ -19,6 +19,7 @@
         "antd": "^5.13.2",
         "autoprefixer": "^10.4.12",
         "axios": "^1.6.1",
+        "daisyui": "^4.6.1",
         "formik": "^2.4.5",
         "laravel-vite-plugin": "^1.0.0",
         "postcss": "^8.4.31",

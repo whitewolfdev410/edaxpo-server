@@ -9,7 +9,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     @vite(['resources/js/site.ts'])
 </head>
-<body class="antialiased">
+<body class="antialiased bg-gray-100">
     @include('partials.topbar')
     @yield('content')
     @include('partials.footer')

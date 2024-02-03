@@ -8,21 +8,21 @@ import {Title} from "@b/components/layout/Title";
 const SearchComponent = (props: any) => {
     return (
         <div className="mb-4 flex flex-row justify-between">
-            <Title>Marchi</Title>
-            <SecondaryButton onClick={() => props.onNewClick(0)}>+ Aggiungi marchio</SecondaryButton>
+            <Title>Categorie</Title>
+            <SecondaryButton onClick={() => props.onNewClick(0)}>+ Aggiungi categoria</SecondaryButton>
         </div>
     )
 }
 
-export default function BrandsPage() {
+export default function CategoriesPage() {
 
     return (
         <div>
             <Crud
                 debug
                 apiResource={''}
-                modalKey={'brand'}
-                pageTitle={'Marchi'}
+                modalKey={'category'}
+                pageTitle={'Categorie'}
                 // tableHeader={false}
                 searchComponent={SearchComponent}
                 tableColumns={[
@@ -35,12 +35,27 @@ export default function BrandsPage() {
                     {
                         title: '',
                         dataIndex: '',
-                        render: () => <img src="" alt=""/>,
-                        width: 200,
+                        render: () => <img src="" alt=""/>
 
                     },
                     {
-                        title: 'Nome',
+                        title: 'Nome IT',
+                        dataIndex: '',
+                    },
+                    {
+                        title: 'Nome EN',
+                        dataIndex: '',
+                    },
+                    {
+                        title: 'Nome DE',
+                        dataIndex: '',
+                    },
+                    {
+                        title: 'Nome FR',
+                        dataIndex: '',
+                    },
+                    {
+                        title: 'Nome ES',
                         dataIndex: '',
                     },
                     {

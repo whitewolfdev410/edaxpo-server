@@ -15,7 +15,7 @@
         @vite(['resources/js/app.tsx', "resources/js/Pages/{$page['component']}.tsx"])
         @inertiaHead
     </head>
-    <body class="antialiased">
+    <body class="antialiased  bg-gray-100">
         @include('partials.topbar')
         <div class="col-12 d-flex flex-column wrapper" >
             @inertia

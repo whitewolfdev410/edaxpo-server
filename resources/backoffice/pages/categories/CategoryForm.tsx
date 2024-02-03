@@ -2,10 +2,10 @@ import {withModalForm} from "@logicpanel/admin-ui";
 import React from "react";
 import {Field} from "@b/components/form/Field";
 import InputText from "@b/components/inputs/InputText";
-import Switch from "@b/components/inputs/Switch";
+import AsyncSelect from "@b/components/inputs/AsyncSelect";
 import Upload from "@b/components/upload/Upload";
 
-const ComponetForm = (props: any) => {
+const CategoryForm = (props: any) => {
     return (
         <div>
             <h1 className="font-bold text-[18px]">Contenuti in lingua</h1>
@@ -25,7 +25,7 @@ const ComponetForm = (props: any) => {
 }
 
 export default withModalForm({
-    apiResource: "/api/users",
-    title: "Aggiungi componente",
+    apiResource: "/api/brands",
+    title: "Aggiungi nuova categoria",
     width: 800
-})(ComponetForm)
+})(CategoryForm)

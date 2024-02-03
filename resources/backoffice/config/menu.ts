@@ -13,33 +13,13 @@ export const menuItems: MenuItem[] = [
         "url": "/dashboard"
     },
     {
-        "label": "Annunci",
-        "icon": "advertising",
-        "url": "/spots"
-    },
-    {
-        "label": "Segnalazioni",
-        "icon": "exclamation",
-        "url": "/components"
-    },
-    {
-        "label": "Richieste contatto",
-        "icon": "list",
-        "url": "/components"
+        "label": "Utenti",
+        "icon": "users",
+        "url": "/users"
     },
     {
         "label": "Componenti",
         "icon": "layerGroup",
-        "url": "/components"
-    },
-    {
-        "label": "Marche",
-        "icon": "copy",
-        "url": "/components"
-    },
-    {
-        "label": "Modelli",
-        "icon": "listCheck",
         "url": "/components"
     },
     {
@@ -48,9 +28,29 @@ export const menuItems: MenuItem[] = [
         "url": "/categories"
     },
     {
-        "label": "Utenti",
-        "icon": "users",
-        "url": "/users"
+        "label": "Marchi",
+        "icon": "copy",
+        "url": "/brands"
+    },
+    {
+        "label": "Modelli",
+        "icon": "listCheck",
+        "url": "/models"
+    },
+    {
+        "label": "Annunci",
+        "icon": "advertising",
+        "url": "/spots"
+    },
+    {
+        "label": "Segnalazioni",
+        "icon": "exclamation",
+        "url": "/dashboard"
+    },
+    {
+        "label": "Richieste contatto",
+        "icon": "list",
+        "url": "/dashboard"
     },
     {
         "label": "Roles",

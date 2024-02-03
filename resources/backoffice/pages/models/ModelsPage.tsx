@@ -3,6 +3,7 @@ import React from "react";
 import Switch from "@b/components/inputs/Switch";
 import {SecondaryButton} from "@b/components/buttons/Button";
 import {Title} from "@b/components/layout/Title";
+import {Search} from "@b/components/search/Search";
 
 
 const SearchComponent = (props: any) => {
